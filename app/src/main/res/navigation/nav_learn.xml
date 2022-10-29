@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learnGraph"
+    app:startDestination="@+id/learnFragment">
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.learn.LearningFragment"
+        android:label="fragment_learn"
+        tools:layout="@layout/fragment_learning"/>
+</navigation>

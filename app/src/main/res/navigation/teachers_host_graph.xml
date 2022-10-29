@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teachers_host_graph"
+    app:startDestination="@id/teacherHomeFragment">
+
+    <fragment
+        android:id="@+id/teacherHomeFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.host.home.TeacherHomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_teacher_home">
+        <action
+            android:id="@+id/action_teacherHomeFragment_to_attendanceFragment"
+            app:destination="@id/attendanceFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_teacherHomeFragment_to_teacherChatFragment"
+            app:destination="@id/teacherChatFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.attendance.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" >
+        <action
+            android:id="@+id/action_attendanceFragment_to_classAttendanceFragment"
+            app:destination="@id/classAttendanceFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/teacherChatFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.chat.TeacherFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_teacher_chat" >
+
+        <action
+            android:id="@+id/action_chatFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment"
+            app:popUpToInclusive="false"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/classAttendanceFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.attendance.ClassAttendanceFragment"
+        android:label="fragment_class_attendance"
+        tools:layout="@layout/fragment_class_attendance"/>
+
+    <fragment
+    android:id="@+id/chatDetailFragment"
+    android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.chat.ChatPToPFragment"
+    android:label="fragment_chat_detail"
+    tools:layout="@layout/fragment_chat_p_to_p" />
+
+</navigation>

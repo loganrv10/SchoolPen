@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" app:cardCornerRadius="@dimen/_25sdp" app:cardElevation="0dp">
+        <FrameLayout android:background="@drawable/back_todays_classes" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="@dimen/_150sdp" android:src="@drawable/chapter_mask" android:scaleType="centerCrop"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_15sdp" android:paddingEnd="@dimen/_15sdp">
+                <TextView android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_18sdp" android:text="Period 1" android:fontFamily="@font/lato_semi_bold"/>
+                <TextView android:textSize="@dimen/_18ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Science" android:fontFamily="@font/lato_bold"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                    <de.hdodenhof.circleimageview.CircleImageView android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/fatima"/>
+                    <TextView android:textSize="@dimen/_14ssp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sara Blasko" android:fontFamily="@font/lato_semi_bold" android:layout_marginStart="@dimen/_8sdp"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/_11ssp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="Chapter 3: Geometry and its uses" android:fontFamily="@font/lato_semi_bold"/>
+                <TextView android:textSize="@dimen/_10ssp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="@string/view_lesson" android:includeFontPadding="false" android:fontFamily="@font/poppins_medium"/>
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="end" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_80sdp" android:src="@drawable/test_tube" android:layout_marginEnd="@dimen/_20sdp"/>
+</FrameLayout>
