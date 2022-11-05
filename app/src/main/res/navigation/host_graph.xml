@@ -16,6 +16,11 @@
             app:destination="@id/noticeFragment"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homeFragment_to_liveClassDetailFragment"
+            app:destination="@id/liveClassesDetailFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
 
         <action
             android:id="@+id/action_homeFragment_to_noticeDetailFragment"

@@ -51,6 +51,10 @@ class SignUpFragment : Fragment() {
 
         binding.apply {
             //btnSignup
+
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
             btnSignup.setOnClickListener {
                 arguments?.let {
                     authorityID = it.getString("id").toString()

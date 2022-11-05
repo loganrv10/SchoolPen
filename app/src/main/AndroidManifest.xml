@@ -32,6 +32,18 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity
+            android:name="com.asmanmirza.schoolpen.presentation.main.teachersleave.TeachersLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.asmanmirza.schoolpen.presentation.main.periods.studentperiods.StudentPeriodsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.main.coursesoverview.CoursesOverviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SchoolPen"/>
     </application>
 
 </manifest>

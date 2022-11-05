@@ -72,6 +72,16 @@ class AdapterHomeDates(var context: Context, var dates:ArrayList<ModelDates>,day
             holder.weekDay.setTextColor(Color.parseColor("#707070"))
         }
 
+        if(md.fullDate == "05/11/2022"){
+            holder.showEvents(1, 0, 0)
+        }
+        if(md.fullDate == "06/11/2022"){
+            holder.showEvents(1, 0, 0)
+        }
+        if(md.fullDate == "08/11/2022"){
+            holder.showEvents(0, 1, 0)
+        }
+
     }
     override fun getItemCount(): Int {
         return dates.size

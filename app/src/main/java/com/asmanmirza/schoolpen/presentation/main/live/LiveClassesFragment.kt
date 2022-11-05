@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -38,18 +39,35 @@ class LiveClassesFragment : Fragment() {
 
         binding.apply {
             recLiveClasses.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false);
-            recLiveClasses.adapter = AdapterLiveClasses(requireContext())
+            recLiveClasses.adapter = AdapterLiveClasses(requireContext(), getLiveClasses())
             topBar.clipToOutline = true
             HostFragment.instance.hideBottomNavBar(1)
             HostFragment.instance.hideDp(true)
             HostFragment.instance.hideTopButtons(true)
             MainActivity.instance.updateStatusBarColor("#259163D7")
 
-            ItemClickSupport.addTo(recLiveClasses).setOnItemClickListener { recyclerView, position, v ->
-                findNavController().navigate(
-                    R.id.action_liveClassFragment_to_liveClassDetail
-                )
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
             }
+            ItemClickSupport.addTo(recLiveClasses).setOnItemClickListener { recyclerView, position, v ->
+                
+                if(position == 0) {
+                    findNavController().navigate(
+                        R.id.action_liveClassFragment_to_liveClassDetail
+                    )
+                }else{
+                    Toast.makeText(requireContext(), "You are not authorized to view all the live classes", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+
+    fun getLiveClasses():ArrayList<ModelLiveClasses>{
+        return ArrayList<ModelLiveClasses>().apply{
+            add(ModelLiveClasses("", "History of India", "Sonu Sharma", "Social Science", "21", ""))
+            add(ModelLiveClasses("", "Algebraic Expressions", "Nani Mathur", "Mathematics", "45", ""))
+            add(ModelLiveClasses("", "Chemical Names", "D Jain", "Science", "32", ""))
+            add(ModelLiveClasses("", "Q&A Session", "S Solanki", "English", "16", ""))
         }
     }
 

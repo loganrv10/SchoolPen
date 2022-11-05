@@ -45,7 +45,7 @@ class AdapterFeeds(var context: Context, var data:ArrayList<ModelFeeds>): Recycl
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 1
     }
 }
 

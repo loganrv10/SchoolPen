@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.asmanmirza.schoolpen.databinding.FragmentCreateTaskBinding
 import java.text.SimpleDateFormat
 import java.util.*
@@ -43,6 +44,10 @@ class CreateTaskFragment : Fragment() {
                 10,
                 false
             )
+
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
 
             startTime.setOnClickListener {
                 clicked = 1;

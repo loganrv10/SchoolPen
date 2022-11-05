@@ -13,13 +13,6 @@ import com.asmanmirza.schoolpen.databinding.ActivityMainBinding
 import com.asmanmirza.schoolpen.presentation.main.host.HostFragment
 import dagger.hilt.android.AndroidEntryPoint
 
-
-/**
- * @Author: Asman Mirza
- * @Email: asman@otmalse.com
- * @Date: 28-09-2022
- * @Time: 20:57
- */
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

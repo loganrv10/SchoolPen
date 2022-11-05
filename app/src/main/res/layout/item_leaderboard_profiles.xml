@@ -36,6 +36,7 @@
             android:src="@drawable/fatima"/>
 
         <TextView
+            android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Kavita Bhatiya"
@@ -46,6 +47,7 @@
             android:fontFamily="@font/poppins_semi_bold"/>
 
         <TextView
+            android:id="@+id/percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="98.4"

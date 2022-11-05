@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.asmanmirza.schoolpen.R
@@ -17,6 +18,7 @@ import com.asmanmirza.schoolpen.databinding.FragmentTimeTableBinding
 import com.asmanmirza.schoolpen.di.ItemClickSupport
 import com.asmanmirza.schoolpen.di.ItemClickSupport.OnItemClickListener
 import com.asmanmirza.schoolpen.presentation.main.MainActivity
+import com.asmanmirza.schoolpen.presentation.main.Teacher.host.TeacherHostFragment
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -40,6 +42,11 @@ class TimeTableFragment : Fragment() {
         MainActivity.instance.updateStatusBarColor("#ffffff")
         binding.apply {
 
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
+
+            TeacherHostFragment.instance.hideNavButtons(true)
             recWeekDays.layoutManager =
                 LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             adapterWeekDays = AdapterWeekDays(requireContext(), getWeekDayNames())

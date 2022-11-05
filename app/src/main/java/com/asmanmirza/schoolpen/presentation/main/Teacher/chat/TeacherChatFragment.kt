@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ import com.asmanmirza.schoolpen.databinding.FragmentTeacherChatBinding
 import com.asmanmirza.schoolpen.di.ItemClickSupport
 import com.asmanmirza.schoolpen.di.ItemClickSupport.OnItemClickListener
 import com.asmanmirza.schoolpen.presentation.main.MainActivity
+import com.asmanmirza.schoolpen.presentation.main.Teacher.host.TeacherHostFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 
@@ -38,7 +40,7 @@ class TeacherFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         MainActivity.instance.updateStatusBarColor("#ffffff")
         binding.apply {
-
+            TeacherHostFragment.instance.hideNavButtons(true)
             recTeachersChat.layoutManager =
                 LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             adapterTeachersChat = AdapterTeachersChat(requireContext(), getChats());
@@ -46,6 +48,10 @@ class TeacherFragment : Fragment() {
 
             btnMore.setOnClickListener {
                 //findNavController().navigate(R.id.action_teacherFragment_to_timeTableFragment)
+            }
+
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
             }
 
             tabs.addOnTabSelectedListener(object:OnTabSelectedListener{
@@ -96,7 +102,11 @@ class TeacherFragment : Fragment() {
 
             ItemClickSupport.addTo(recTeachersChat).setOnItemClickListener(object:OnItemClickListener{
                 override fun onItemClicked(recyclerView: RecyclerView?, position: Int, v: View?) {
-                    findNavController().navigate(R.id.action_chatFragment_to_chatDetailFragment)
+                    if(position == 0) {
+                        findNavController().navigate(R.id.action_chatFragment_to_chatDetailFragment)
+                    }else{
+                        Toast.makeText(requireContext(), "You can only view 1st chat", Toast.LENGTH_SHORT).show()
+                    }
                 }
             })
 

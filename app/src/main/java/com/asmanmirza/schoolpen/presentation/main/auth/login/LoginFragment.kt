@@ -57,16 +57,19 @@ class LoginFragment : Fragment() {
 
             btnLogin.setOnClickListener {
 
-                if (inUsername.text.toString().lowercase() == "nidhi") {
+                if (inUsername.text.toString().lowercase() == "nidhi" && inPassword.text.toString() == "nidhi") {
                     findNavController().navigate(R.id.action_loginFragment_to_teachersHostFragment)
                 } else {
-
                     if (inUsername.text?.isNotEmpty() == true && inPassword.text?.isNotEmpty() == true)
                         JsonObject().apply {
                             addProperty("userName", inUsername.text.toString())
                             addProperty("password", inPassword.text.toString())
                         }.also {
                             //layoutLoading.root.visibility = View.VISIBLE
+                            binding.layoutLoading.visibility = View.VISIBLE
+                            binding.inUsername.isEnabled = false
+                            binding.inPassword.isEnabled = false
+                            binding.btnLogin.isEnabled = false
                             viewModel.login(it)
                         }
                     else
@@ -99,6 +102,11 @@ class LoginFragment : Fragment() {
                     when(response){
                         is NetworkResponse.Error -> {
                             binding.layoutLoading.dismiss()
+                            Toast.makeText(
+                                requireContext(),
+                                "Invalid credentials",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
                         is NetworkResponse.Idle -> { }
                         is NetworkResponse.Loading -> {

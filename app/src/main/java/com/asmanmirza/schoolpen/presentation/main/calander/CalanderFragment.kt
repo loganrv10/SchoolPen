@@ -53,6 +53,10 @@ class CalanderFragment : Fragment() {
                 findNavController().navigate(R.id.action_calendarFragment_to_createTaskFragment)
             }
 
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
+
             val layoutManager =
                 LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             recMonths.layoutManager = layoutManager;
@@ -106,22 +110,22 @@ class CalanderFragment : Fragment() {
 
     fun addEvents(){
         val events = ArrayList<ModelEvents>();
-        events.add(ModelEvents(15, 10, "Annual sports meet", "All Day", "", "event"))
-        events.add(ModelEvents(15, 10, "Award ceremony", "14:00-17:00", "", "event"))
+        events.add(ModelEvents(5, 11, "Annual sports meet", "All Day", "", "event"))
+        events.add(ModelEvents(6, 11, "Award ceremony", "14:00-17:00", "", "event"))
         binding.recEvents.adapter = AdapterEvents(requireContext(), events)
     }
 
     fun addTasks(){
         val events = ArrayList<ModelEvents>();
-        events.add(ModelEvents(24, 10, "Ankita Sharma assignment", "05:00 PM", "High", "task"))
-        events.add(ModelEvents(24, 10, "Read Ch-2 B V Ramana", "05:00 PM", "Med", "task"))
+        events.add(ModelEvents(8, 11, "Ankita Sharma assignment", "05:00 PM", "High", "task"))
+        events.add(ModelEvents(10, 11, "Read Ch-2 B V Ramana", "05:00 PM", "Med", "task"))
         binding.recEvents.adapter = AdapterEvents(requireContext(), events)
     }
 
     fun addBirthdays(){
         val events = ArrayList<ModelEvents>();
-        events.add(ModelEvents(27, 10, "Akhil's Birthday 🎂", "10:00 AM", "", "birthday"))
-        events.add(ModelEvents(27, 10, "Principal Sir Birthday 🎂", "01:00 AM", "", "birthday"))
+        events.add(ModelEvents(23, 11, "Akhil's Birthday 🎂", "10:00 AM", "", "birthday"))
+        events.add(ModelEvents(27, 11, "Principal Sir Birthday 🎂", "01:00 AM", "", "birthday"))
         binding.recEvents.adapter = AdapterEvents(requireContext(), events)
     }
 
@@ -230,11 +234,11 @@ class CalanderFragment : Fragment() {
     @SuppressLint("SimpleDateFormat")
     fun getDate(date:String, month:Int): String{
         return if(month - 1 == 0){
-            "$date/12/${binding.selectedCalander.text.toString().toInt() - 1}"
+            "${if(date.toInt() < 10) "0$date" else date}/12/${binding.selectedCalander.text.toString().toInt() - 1}"
         }else if(month > 12){
-            "$date/01/${binding.selectedCalander.text.toString().toInt() + 1}"
+            "${if(date.toInt() < 10) "0$date" else date}/01/${binding.selectedCalander.text.toString().toInt() + 1}"
         }else{
-            "$date/${if(month < 10) "0$month" else "$month"}/${binding.selectedCalander.text.toString()}"
+            "${if(date.toInt() < 10) "0$date" else date}/${if(month < 10) "0$month" else "$month"}/${binding.selectedCalander.text.toString()}"
         }
     }
 

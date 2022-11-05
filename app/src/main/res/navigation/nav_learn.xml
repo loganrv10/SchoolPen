@@ -8,5 +8,21 @@
         android:id="@+id/learnFragment"
         android:name="com.asmanmirza.schoolpen.presentation.main.learn.LearningFragment"
         android:label="fragment_learn"
-        tools:layout="@layout/fragment_learning"/>
+        tools:layout="@layout/fragment_learning">
+
+        <action
+            android:id="@+id/action_learnFragment_to_addQuestionFragment"
+            app:destination="@id/createPollFragment"
+            app:popUpTo="@id/learnFragment"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createPollFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.learn.create.AddQuestionFragment"
+        android:label="fragment_add_question"
+        tools:layout="@layout/fragment_add_question"/>
+
+
 </navigation>

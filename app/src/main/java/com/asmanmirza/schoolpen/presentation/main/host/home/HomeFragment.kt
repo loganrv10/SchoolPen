@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asmanmirza.schoolpen.R
 import com.asmanmirza.schoolpen.databinding.FragmentHomeBinding
+import com.asmanmirza.schoolpen.di.ItemClickSupport
+import com.asmanmirza.schoolpen.di.ZoomOutPageTransformer
 import com.asmanmirza.schoolpen.presentation.main.MainActivity
 import com.asmanmirza.schoolpen.presentation.main.calander.AdapterEvents
 import com.asmanmirza.schoolpen.presentation.main.calander.ModelDates
@@ -22,6 +24,7 @@ import com.asmanmirza.schoolpen.presentation.main.calander.ModelEvents
 import com.asmanmirza.schoolpen.presentation.main.courses.CoursesFragment
 import com.asmanmirza.schoolpen.presentation.main.host.HostFragment
 import com.asmanmirza.schoolpen.presentation.main.host.HostViewModel
+import com.asmanmirza.schoolpen.presentation.main.live.ModelLiveClasses
 import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -60,8 +63,27 @@ class HomeFragment : Fragment() {
         binding.apply {
             MainActivity.instance.updateStatusBarColor("#99F86005")
             HostFragment.instance.hideBottomNavBar(0)
+            HostFragment.instance.setNavBarColor("#00000000", "#99f86005")
             HostFragment.instance.hideDp(true)
             HostFragment.instance.hideTopButtons(true)
+
+
+            with(viewPagerLiveClasses){
+                adapter = AdapterHomeLiveClasses(requireContext(), getLiveClasses())
+                setPageTransformer(true, ZoomOutPageTransformer())
+                dotsIndicator.attachTo(this)
+            }
+            with(viewPagerTodaysClasses){
+                adapter = AdapterHomeTodaysClasses(requireContext(), getTodayClasses())
+                setPageTransformer(true, ZoomOutPageTransformer())
+                dotsIndicator1.attachTo(this)
+            }
+            with(viewPagerTomorrowClasses){
+                adapter = AdapterHomeTodaysClasses(requireContext(), getTomorrowClasses())
+                setPageTransformer(true, ZoomOutPageTransformer())
+                dotsIndicator2.attachTo(this)
+            }
+
             btnViewAllNotices.setOnClickListener {
                 MainActivity.instance.updateStatusBarColor("#ffffff")
                 findNavController().navigate(R.id.action_homeFragment_to_noticeFragment)
@@ -79,7 +101,6 @@ class HomeFragment : Fragment() {
             homeScroll.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
                 HostFragment.instance.hideDp(isViewVisible(homeDp1))
                 HostFragment.instance.hideTopButtons(isViewVisible(layoutTopButtons))
-
                 if(isViewVisible(homeDp1)){
                     HostFragment.instance.setNavBarColor("#00000000", "#99F86005");
                 }else{
@@ -109,39 +130,66 @@ class HomeFragment : Fragment() {
                             addBirthdays()
                         }
                     }
-
                 }
-
                 override fun onTabUnselected(tab: TabLayout.Tab?) {
-
                 }
-
                 override fun onTabReselected(tab: TabLayout.Tab?) {
-
                 }
-
             })
+        }
+    }
+
+    fun showLiveClass(){
+        findNavController().navigate(R.id.action_homeFragment_to_liveClassDetailFragment);
+    }
+
+    fun getLiveClasses():ArrayList<ModelLiveClasses>{
+        return ArrayList<ModelLiveClasses>().apply{
+            add(ModelLiveClasses("", "History of India", "Sonu Sharma", "Social Science", "21", ""))
+            add(ModelLiveClasses("", "Algebraic Expressions", "Nani Mathur", "Mathematics", "45", ""))
+            add(ModelLiveClasses("", "Chemical Names", "D Jain", "Science", "32", ""))
+            add(ModelLiveClasses("", "Q&A Session", "S Solanki", "English", "16", ""))
+        }
+    }
+    fun getTodayClasses():ArrayList<ModelClasses>{
+        return ArrayList<ModelClasses>().apply{
+            add(ModelClasses("", "1", "Social Science", "Sonu Sharma", "Chapter 2: History of India", ""))
+            add(ModelClasses("", "2", "Mathematics", "Alex Edward", "Chapter 3: Combination & Permutation", ""))
+            add(ModelClasses("", "3", "Science", "Ashley Jain", "Chapter 6: Chemical & Solutions", ""))
+            add(ModelClasses("", "4", "English", "Danny Mathur", "Chapter 2: Active and Passive Voices", ""))
+            add(ModelClasses("", "5", "Hindi", "S Gupta", "Chapter 4: Story of Buddha", ""))
+            add(ModelClasses("", "6", "Computer", "Taylor", "Chapter 2: Learning basic of computer", ""))
+        }
+    }
+    fun getTomorrowClasses():ArrayList<ModelClasses>{
+        return ArrayList<ModelClasses>().apply{
+            add(ModelClasses("", "1", "Social Science", "Sonu Sharma", "Chapter 2: History of India", ""))
+            add(ModelClasses("", "2", "Mathematics", "Alex Edward", "Chapter 3: Combination & Permutation", ""))
+            add(ModelClasses("", "3", "Science", "Ashley Jain", "Chapter 6: Chemical & Solutions", ""))
+            add(ModelClasses("", "4", "English", "Danny Mathur", "Chapter 2: Active and Passive Voices", ""))
+            add(ModelClasses("", "5", "Hindi", "S Gupta", "Chapter 4: Story of Buddha", ""))
+            add(ModelClasses("", "6", "Computer", "Taylor", "Chapter 2: Learning basic of computer", ""))
         }
     }
 
     fun addEvents(){
         val events = ArrayList<ModelEvents>();
-        events.add(ModelEvents(1, 11, "Annual sports meet", "All Day", "", "event"))
-        events.add(ModelEvents(1, 11, "Award ceremony", "14:00-17:00", "", "event"))
+        events.add(ModelEvents(5, 11, "Annual sports meet", "All Day", "", "event"))
+        events.add(ModelEvents(6, 11, "Award ceremony", "14:00-17:00", "", "event"))
         binding.recEvents.adapter = AdapterEvents(requireContext(), events)
     }
 
     fun addTasks(){
         val events = ArrayList<ModelEvents>();
-        events.add(ModelEvents(31, 10, "Ankita Sharma assignment", "05:00 PM", "High", "task"))
-        events.add(ModelEvents(31, 10, "Read Ch-2 B V Ramana", "05:00 PM", "Med", "task"))
+        events.add(ModelEvents(8, 11, "Ankita Sharma assignment", "05:00 PM", "High", "task"))
+        events.add(ModelEvents(10, 11, "Read Ch-2 B V Ramana", "05:00 PM", "Med", "task"))
         binding.recEvents.adapter = AdapterEvents(requireContext(), events)
     }
 
     fun addBirthdays(){
         val events = ArrayList<ModelEvents>();
-        events.add(ModelEvents(30, 10, "Akhil's Birthday 🎂", "10:00 AM", "", "birthday"))
-        events.add(ModelEvents(30, 10, "Principal Sir Birthday 🎂", "01:00 AM", "", "birthday"))
+        events.add(ModelEvents(23, 11, "Akhil's Birthday 🎂", "10:00 AM", "", "birthday"))
+        events.add(ModelEvents(27, 11, "Principal Sir Birthday 🎂", "01:00 AM", "", "birthday"))
         binding.recEvents.adapter = AdapterEvents(requireContext(), events)
     }
 
@@ -158,11 +206,11 @@ class HomeFragment : Fragment() {
     fun getDates():ArrayList<ModelDates>{
 
         return ArrayList<ModelDates>().apply {
-            add(ModelDates(29, "29/10/2022", false))
-            add(ModelDates(30, "30/10/2022", false))
-            add(ModelDates(31, "31/10/2022", false))
-            add(ModelDates(1, "1/11/2022", false))
-            add(ModelDates(2, "2/11/2022", false))
+            add(ModelDates(4, "04/11/2022", false))
+            add(ModelDates(5, "05/11/2022", false))
+            add(ModelDates(6, "06/11/2022", false))
+            add(ModelDates(7, "07/11/2022", false))
+            add(ModelDates(8, "08/11/2022", false))
         }
 
     }

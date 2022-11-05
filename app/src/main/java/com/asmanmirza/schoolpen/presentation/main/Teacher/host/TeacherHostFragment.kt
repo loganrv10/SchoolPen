@@ -19,6 +19,8 @@ class TeacherHostFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        instance = this;
         // Inflate the layout for this fragment
         _viewBinding = FragmentTeacherHostBinding.inflate(inflater,container,false)
         return viewBinding.root
@@ -27,6 +29,21 @@ class TeacherHostFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewBinding.apply {
+
+        }
+    }
+
+    companion object {
+        lateinit var instance: TeacherHostFragment
+            private set
+    }
+
+
+    fun hideNavButtons(hide:Boolean){
+        if(hide){
+            viewBinding.bottomNavBar.visibility = View.GONE
+        }else{
+            viewBinding.bottomNavBar.visibility = View.VISIBLE
 
         }
 

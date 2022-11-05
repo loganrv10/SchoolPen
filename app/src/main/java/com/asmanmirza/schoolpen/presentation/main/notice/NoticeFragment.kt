@@ -49,6 +49,9 @@ class NoticeFragment : Fragment() {
             btnSortBy.setOnClickListener {
                 showSortPopup()
             }
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
 
             ItemClickSupport.addTo(recNotices).setOnItemClickListener { recyclerView, position, v ->
                 val b = Bundle();
@@ -56,7 +59,7 @@ class NoticeFragment : Fragment() {
                 b.putString("description", data[position].description)
                 b.putString("file", data[position].file)
                 b.putString("type", data[position].type)
-                findNavController().navigate(R.id.action_noticeFragment_to_noticeDetailFragment, b)
+                //findNavController().navigate(R.id.action_noticeFragment_to_noticeDetailFragment, b)
             }
         }
     }

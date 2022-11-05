@@ -9,10 +9,15 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.compose.animation.core.LinearEasing
 import androidx.core.widget.NestedScrollView
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.asmanmirza.schoolpen.R
 import com.asmanmirza.schoolpen.databinding.FragmentClassworkBinding
 import com.asmanmirza.schoolpen.databinding.FragmentHomeBinding
+import com.asmanmirza.schoolpen.di.ItemClickSupport
+import com.asmanmirza.schoolpen.di.ItemClickSupport.OnItemClickListener
+import com.asmanmirza.schoolpen.presentation.main.MainActivity
 import com.asmanmirza.schoolpen.presentation.main.host.HostFragment
 import com.asmanmirza.schoolpen.presentation.main.host.home.HomeViewModel
 import com.google.android.material.tabs.TabLayout
@@ -35,6 +40,17 @@ class ClassworkFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             getHomeworkDetails()
+            MainActivity.instance.updateStatusBarColor("#259163D7")
+            HostFragment.instance.hideBottomNavBar(0)
+            todayGradeCard.setOnClickListener {
+                HostFragment.instance.hideBottomNavBar(1)
+                findNavController().navigate(R.id.action_classFragment_to_c_gradingFragment)
+            }
+
+            cumulativeGradeBtn.setOnClickListener {
+                HostFragment.instance.hideBottomNavBar(1)
+                findNavController().navigate(R.id.action_classFragment_to_gradingFragment)
+            }
 
             tabs.addOnTabSelectedListener(object:OnTabSelectedListener{
                 override fun onTabSelected(tab: TabLayout.Tab?) {
@@ -63,6 +79,19 @@ class ClassworkFragment : Fragment() {
                 override fun onTabReselected(tab: TabLayout.Tab?) {
                 }
             })
+
+            ItemClickSupport.addTo(recPendingWork).setOnItemClickListener { recyclerView, position, v ->
+                findNavController().navigate(
+                    R.id.action_classFragment_to_homeWorkDetail
+                )
+                HostFragment.instance.hideBottomNavBar(1)
+            }
+            ItemClickSupport.addTo(recPendingTest).setOnItemClickListener { recyclerView, position, v ->
+                findNavController().navigate(
+                    R.id.action_classFragment_to_testDetailFragment
+                )
+                HostFragment.instance.hideBottomNavBar(1)
+            }
 
 
         }

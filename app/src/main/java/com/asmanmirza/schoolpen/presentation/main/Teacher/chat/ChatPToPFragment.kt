@@ -6,11 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asmanmirza.schoolpen.R
 import com.asmanmirza.schoolpen.databinding.FragmentChatPToPBinding
 import com.asmanmirza.schoolpen.databinding.FragmentTimeTableBinding
 import com.asmanmirza.schoolpen.presentation.main.MainActivity
+import com.asmanmirza.schoolpen.presentation.main.Teacher.host.TeacherHostFragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 
@@ -33,11 +35,16 @@ class ChatPToPFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         MainActivity.instance.updateStatusBarColor("#ffffff")
         binding.apply {
+            TeacherHostFragment.instance.hideNavButtons(true)
             Glide.with(requireContext()).load("https://api.lorem.space/image/face?w=150&h=150").thumbnail(0.5f).diskCacheStrategy(
                 DiskCacheStrategy.ALL).into(dpImage)
 
             recChatPToP.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             recChatPToP.adapter = AdapterChatPToP(requireContext(), getDummyChats());
+
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
 
         }
     }

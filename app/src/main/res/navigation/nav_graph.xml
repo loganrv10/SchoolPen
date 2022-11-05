@@ -88,7 +88,21 @@
         android:id="@+id/hostFragment"
         android:name="com.asmanmirza.schoolpen.presentation.main.host.HostFragment"
         android:label="fragment_host"
-        tools:layout="@layout/fragment_host" />
+        tools:layout="@layout/fragment_host">
+
+        <action
+            android:id="@+id/action_host_to_gradingFragment"
+            app:destination="@id/gradingFragment"
+            app:popUpTo="@id/hostFragment"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gradingFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.classwork.grades.GradingFragment"
+        android:label="fragment_gradingFragment"
+        tools:layout="@layout/fragment_grading" />
 
     <fragment
         android:id="@+id/teacherHost"

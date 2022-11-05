@@ -55,7 +55,7 @@ class AdapterNotice(var context: Context, var data:ArrayList<ModelNotice>) : Rec
             holder.playBtn.visibility = View.VISIBLE;
         }else if(md.type == "pdf"){
             holder.showMoreBtn.visibility = View.VISIBLE
-            Glide.with(context).load(getThumbnail(md.file)).thumbnail(0.5f).diskCacheStrategy(DiskCacheStrategy.ALL).into(holder.img)
+            Glide.with(context).load(R.drawable.pdf).thumbnail(0.5f).diskCacheStrategy(DiskCacheStrategy.ALL).into(holder.img)
         }else if(md.type == "text"){
             holder.description.visibility = View.VISIBLE
             holder.showMoreBtn.visibility = View.VISIBLE

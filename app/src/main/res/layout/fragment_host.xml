@@ -21,41 +21,6 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/host_graph" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/learnFragmentContainer"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:visibility="gone"
-            app:navGraph="@navigation/nav_learn" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/classworkFragmentContainer"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:visibility="gone"
-            app:navGraph="@navigation/nav_classwork" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/coursesFragmentContainer"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:visibility="gone"
-            app:navGraph="@navigation/nav_courses" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/performanceFragmentContainer"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:visibility="gone"
-            app:navGraph="@navigation/nav_classwork" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/bottomNavBar"
@@ -65,12 +30,13 @@
             android:backgroundTint="@color/color_primary"
             android:paddingTop="@dimen/_5sdp"
             android:paddingBottom="@dimen/_5sdp"
-            app:tabIconTint="#ffffff"
-            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIconTint="#d1d1d1"
+            app:tabInlineLabel="true"
+            app:tabIndicator="@drawable/ic_tab_dor"
             app:tabIndicatorAnimationMode="linear"
             app:tabIndicatorColor="@color/white"
             app:tabIndicatorFullWidth="false"
-            app:tabIndicatorHeight="@dimen/_4sdp"
+            app:tabIndicatorHeight="@dimen/_3sdp"
             app:tabTextAppearance="@style/tab_text"
             app:tabRippleColor="@android:color/transparent"
             app:tabSelectedTextColor="@color/white"
@@ -79,11 +45,13 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home" />
+                android:tooltipText="Home"
+                android:icon="@drawable/ic_round_home_24" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tooltipText="Learning"
                 android:icon="@drawable/ic_learn" />
 
             <com.google.android.material.tabs.TabItem
@@ -94,11 +62,13 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tooltipText="Courses"
                 android:icon="@drawable/ic_round_menu_book_24" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tooltipText="Performance"
                 android:icon="@drawable/ic_graph" />
         </com.google.android.material.tabs.TabLayout>
     </LinearLayout>

@@ -8,5 +8,50 @@
         android:id="@+id/classworkFragment"
         android:name="com.asmanmirza.schoolpen.presentation.main.classwork.ClassworkFragment"
         android:label="fragment_classwork"
-        tools:layout="@layout/fragment_classwork"/>
+        tools:layout="@layout/fragment_classwork">
+
+        <action
+            android:id="@+id/action_classFragment_to_c_gradingFragment"
+            app:destination="@id/cGradingFragment"
+            app:popUpTo="@id/classworkFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_classFragment_to_homeWorkDetail"
+            app:destination="@id/homeworkDetailFragment"
+            app:popUpTo="@id/classworkFragment"
+            app:popUpToInclusive="false" />
+
+        <action
+            android:id="@+id/action_classFragment_to_gradingFragment"
+            app:destination="@id/cumulativeGradeFragment"
+            app:popUpTo="@id/classworkFragment"
+            app:popUpToInclusive="false" />
+
+        <action
+            android:id="@+id/action_classFragment_to_testDetailFragment"
+            app:destination="@id/testDetailFragment"
+            app:popUpTo="@id/classworkFragment"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/testDetailFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.classwork.details.TestDetailFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test_detail"/>
+    <fragment
+        android:id="@+id/cumulativeGradeFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.classwork.grades.GradingFragment"
+        android:label="fragment_cumulative_grade"
+        tools:layout="@layout/fragment_grading"/>
+    <fragment
+        android:id="@+id/homeworkDetailFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.classwork.details.HomeworkDetailFragment"
+        android:label="fragment_homework"
+        tools:layout="@layout/fragment_homework_detail"/>
+    <fragment
+        android:id="@+id/cGradingFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.classwork.grades.CGradingFragment"
+        android:label="fragment_c_grading"
+        tools:layout="@layout/fragment_c_grading"/>
 </navigation>

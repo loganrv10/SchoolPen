@@ -116,6 +116,7 @@
                                 app:tint="@color/teachers_dark_pink" />
 
                             <ImageButton
+                                android:id="@+id/btnChat"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="@dimen/_8sdp"
@@ -152,6 +153,7 @@
                         android:textSize="@dimen/_12ssp" />
 
                     <ImageButton
+                        android:id="@+id/btnTimeTableToday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center_vertical"
@@ -234,9 +236,184 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
-                            <include layout="@layout/item_assigned_classes" />
-                            <include layout="@layout/item_assigned_classes" />
-                            <include layout="@layout/item_assigned_classes" />
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="@dimen/_120sdp"
+                                    android:layout_height="@dimen/_190sdp">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/todays_class_cardview_container"
+                                        android:layout_width="@dimen/_120sdp"
+                                        android:layout_height="@dimen/_150sdp"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        app:cardCornerRadius="@dimen/_25sdp"
+                                        app:cardElevation="0dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="#C45162">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_170sdp"
+                                                android:layout_height="@dimen/_200sdp"
+                                                android:scaleType="centerCrop"
+                                                android:src="@drawable/chapter_mask"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <TextView
+                                                android:id="@+id/todays_class_class_name"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_18sdp"
+                                                android:fontFamily="@font/lato_regular"
+                                                android:text="Class IV-C"
+                                                android:textColor="#ffffff"
+                                                android:textSize="@dimen/_16sdp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <TextView
+                                                android:id="@+id/todays_class_subject_name"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_12sdp"
+                                                android:fontFamily="@font/poppins_bold"
+                                                android:text="Science"
+                                                android:textColor="#ffffff"
+                                                android:textSize="@dimen/_20sdp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@id/todays_class_class_name" />
+
+                                            <TextView
+                                                android:id="@+id/todays_class_total_students"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_12sdp"
+                                                android:fontFamily="@font/lato_bold"
+                                                android:text="Total Students 47"
+                                                android:textColor="#ffffff"
+                                                android:textSize="@dimen/_10sdp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@id/todays_class_subject_name" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="@dimen/_66sdp"
+                                        android:layout_height="@dimen/_66sdp"
+                                        android:src="@drawable/fatima"
+                                        app:civ_border_color="@color/white"
+                                        app:civ_border_width="@dimen/_5sdp"
+                                        app:layout_constraintBottom_toBottomOf="@id/todays_class_cardview_container"
+                                        app:layout_constraintEnd_toEndOf="@id/todays_class_cardview_container"
+                                        app:layout_constraintStart_toStartOf="@id/todays_class_cardview_container"
+                                        app:layout_constraintTop_toBottomOf="@id/todays_class_cardview_container" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </FrameLayout>
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="@dimen/_120sdp"
+                                    android:layout_height="@dimen/_190sdp">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/todays_class_cardview_container1"
+                                        android:layout_width="@dimen/_120sdp"
+                                        android:layout_height="@dimen/_150sdp"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        app:cardCornerRadius="@dimen/_25sdp"
+                                        app:cardElevation="0dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="#C45162">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_170sdp"
+                                                android:layout_height="@dimen/_200sdp"
+                                                android:scaleType="centerCrop"
+                                                android:src="@drawable/chapter_mask"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <TextView
+                                                android:id="@+id/todays_class_class_name1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_18sdp"
+                                                android:fontFamily="@font/lato_regular"
+                                                android:text="Class V-A"
+                                                android:textColor="#ffffff"
+                                                android:textSize="@dimen/_16sdp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <TextView
+                                                android:id="@+id/todays_class_subject_name1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_12sdp"
+                                                android:fontFamily="@font/poppins_bold"
+                                                android:text="English"
+                                                android:textColor="#ffffff"
+                                                android:textSize="@dimen/_20sdp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@id/todays_class_class_name1" />
+
+                                            <TextView
+                                                android:id="@+id/todays_class_total_students1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_12sdp"
+                                                android:fontFamily="@font/lato_bold"
+                                                android:text="Total Students 40"
+                                                android:textColor="#ffffff"
+                                                android:textSize="@dimen/_10sdp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@id/todays_class_subject_name1" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="@dimen/_66sdp"
+                                        android:layout_height="@dimen/_66sdp"
+                                        android:src="@drawable/sample_dp"
+                                        app:civ_border_color="@color/white"
+                                        app:civ_border_width="@dimen/_5sdp"
+                                        app:layout_constraintBottom_toBottomOf="@id/todays_class_cardview_container1"
+                                        app:layout_constraintEnd_toEndOf="@id/todays_class_cardview_container1"
+                                        app:layout_constraintStart_toStartOf="@id/todays_class_cardview_container1"
+                                        app:layout_constraintTop_toBottomOf="@id/todays_class_cardview_container1" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </FrameLayout>
 
                         </LinearLayout>
                     </HorizontalScrollView>
@@ -269,7 +446,7 @@
                     android:includeFontPadding="false"
                     android:paddingStart="0dp"
                     android:paddingEnd="@dimen/_5sdp"
-                    android:text="October 2022"
+                    android:text="November 2022"
                     android:textSize="@dimen/_13ssp" />
 
                 <FrameLayout
@@ -376,6 +553,7 @@
                 </FrameLayout>
 
                 <FrameLayout
+                    android:id="@+id/teachers_leaves_tab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 

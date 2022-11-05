@@ -115,6 +115,9 @@ dependencies {
     //blur view
     implementation 'jp.wasabeef:blurry:4.0.1'
 
+    //charts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
     //rounded framlayout
     implementation 'com.github.QuarkWorks:RoundedFrameLayout-Android:0.3.7'
     implementation 'com.rishabhharit.roundedimageview:RoundedImageView:0.8.4'

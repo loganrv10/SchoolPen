@@ -12,4 +12,6 @@
     <color name="teachers_dark_pink">#C45162</color>
     <color name="teachers_dark_pink_alpha_60">#99C45162</color>
     <color name="attendance_title">#707070</color>
+    <color name="homework_detail_tint">#44C2E1</color>
+    <color name="tabs_color">#707070</color>
 </resources>

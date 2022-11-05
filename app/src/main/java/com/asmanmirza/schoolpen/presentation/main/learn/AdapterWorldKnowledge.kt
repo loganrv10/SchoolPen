@@ -31,7 +31,7 @@ class AdapterWorldKnowledge(var context: Context, var data:ArrayList<ModelWKnowl
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 1
     }
 }
 

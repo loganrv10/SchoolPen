@@ -18,6 +18,10 @@
             android:id="@+id/action_teacherHomeFragment_to_teacherChatFragment"
             app:destination="@id/teacherChatFragment"
             app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_teacherHomeFragment_to_timeTableFragment"
+            app:destination="@id/timeTableFragment"
+            app:popUpToInclusive="false"/>
     </fragment>
     <fragment
         android:id="@+id/attendanceFragment"
@@ -54,5 +58,12 @@
     android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.chat.ChatPToPFragment"
     android:label="fragment_chat_detail"
     tools:layout="@layout/fragment_chat_p_to_p" />
+
+    <fragment
+        android:id="@+id/timeTableFragment"
+        android:name="com.asmanmirza.schoolpen.presentation.main.Teacher.timetable.TimeTableFragment"
+        android:label="fragment_time_table_fragment"
+        tools:layout="@layout/fragment_time_table" />
+
 
 </navigation>
