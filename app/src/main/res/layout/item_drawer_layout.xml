@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:fitsSystemWindows="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#10AAAAAA"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_35sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/school_logo1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:maxLines="2"
+                        android:text="Stonehill International School"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Bangalore , India"
+                        android:textColor="#AAAAAA"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teachers"
+                android:textColor="#383838"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:paddingBottom="@dimen/_12sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Classmates"
+                android:textColor="#383838"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_classmates"
+                android:paddingBottom="@dimen/_12sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Syllabus"
+                android:textColor="#383838"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_syllabus"
+                android:paddingBottom="@dimen/_12sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:textColor="#383838"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_attendance"
+                android:paddingBottom="@dimen/_12sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calendar"
+                android:textColor="#383838"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:paddingBottom="@dimen/_12sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School Board"
+                android:textColor="#383838"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_pin_20"
+                android:paddingBottom="@dimen/_12sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fee Portal"
+                android:textColor="#383838"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/color_primary"
+                android:drawableStart="@drawable/ic_baseline_fee"
+                android:paddingBottom="@dimen/_12sdp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textColor="#383838"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="@color/color_primary"
+            android:drawableStart="@drawable/ic_baseline_logout_20"
+            android:paddingBottom="@dimen/_12sdp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

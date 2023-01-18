@@ -122,5 +122,8 @@ dependencies {
     implementation 'com.github.QuarkWorks:RoundedFrameLayout-Android:0.3.7'
     implementation 'com.rishabhharit.roundedimageview:RoundedImageView:0.8.4'
 
+    //animations
+    implementation 'com.github.gayanvoice:android-animations:1.0.2'
+
 
 }

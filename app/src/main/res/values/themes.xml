@@ -15,10 +15,22 @@
         <item name="android:windowExitAnimation">@anim/bottom_close_anim</item>
     </style>
 
+    <style name="Animation_drawer">
+        <item name="android:windowEnterAnimation">@anim/left_rise</item>
+        <item name="android:windowExitAnimation">@anim/left_out</item>
+    </style>
+
     <style name="tab_text">
 
         <item name="android:fontFamily">@font/poppins_semi_bold</item>
         <item name="android:textSize">@dimen/_10ssp</item>
+
+    </style>
+
+    <style name="tab_text1">
+
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
 
     </style>
 

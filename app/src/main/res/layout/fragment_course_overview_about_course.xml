@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.main.coursesoverview.tabs.CourseOverviewAboutCourseFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/_5sdp">
 
 
@@ -84,7 +85,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/text_requirements_heading"
             android:layout_marginHorizontal="@dimen/_5sdp"
-            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:textSize="@dimen/_11ssp"
             android:text="You should be comfortable with the Fundamentals of Math.
 You should be comfortable with basic Algebra, like equation solving.
@@ -92,10 +93,10 @@ A little Geometry is helpful, but not absolutely necessary.
 We'll start the course by talking about angles, so if you know some algebra and geometry basics, you'll be well-prepared for the course."
             android:fontFamily="@font/poppins_medium"
             android:textColor="#707070"
-            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
             app:layout_constraintStart_toStartOf="parent"/>
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

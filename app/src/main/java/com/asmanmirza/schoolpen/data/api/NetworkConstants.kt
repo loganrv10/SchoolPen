@@ -10,7 +10,7 @@ package com.asmanmirza.schoolpen.data.api
 object NetworkConstants {
     object Api {
         private const val API = "api/v1"
-        const val BASE_URL = "http://aie-backend.herokuapp.com/"
+        const val BASE_URL = "http://15.207.234.31:8181/"
 
         object EndPoints {
             object Auth {

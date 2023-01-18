@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".presentation.main.Teacher.host.home.TeacherHomeFragment">
+    android:orientation="vertical">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/homeScroll"
@@ -35,17 +34,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="@dimen/_30sdp">
+                android:paddingTop="@dimen/_20sdp">
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    >
                 <ImageView
                     android:id="@+id/iv_menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginBottom="@dimen/_20sdp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_round_menu_24" />
+                    android:src="@drawable/ic_round_menu_24"
+                    app:tint="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/iv_Signout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:scaleType="fitXY"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_baseline_logout_20"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -68,7 +87,7 @@
                                 android:id="@+id/homeDp1"
                                 android:layout_width="@dimen/_50sdp"
                                 android:layout_height="@dimen/_50sdp"
-                                android:src="@drawable/sample_dp" />
+                                android:src="@drawable/dp1" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -91,7 +110,7 @@
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppins_bold"
                                     android:includeFontPadding="false"
-                                    android:text="Nidhi"
+                                    android:text="Netu"
                                     android:textColor="@color/white"
                                     android:textSize="@dimen/_18ssp"
                                     android:textStyle="bold" />
@@ -233,10 +252,11 @@
                         android:layout_height="wrap_content">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <FrameLayout
+                                android:id="@+id/assignedClass1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_16sdp"
@@ -326,6 +346,7 @@
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </FrameLayout>
                             <FrameLayout
+                                android:id="@+id/assignedClass2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_16sdp"
@@ -446,7 +467,7 @@
                     android:includeFontPadding="false"
                     android:paddingStart="0dp"
                     android:paddingEnd="@dimen/_5sdp"
-                    android:text="November 2022"
+                    android:text="January 2023"
                     android:textSize="@dimen/_13ssp" />
 
                 <FrameLayout
@@ -570,8 +591,10 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
                     android:orientation="horizontal">
 
                     <TextView

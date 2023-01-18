@@ -28,6 +28,7 @@
                 android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/top_explore_image"
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="@dimen/_70sdp"
                 android:src="@drawable/learn_back_designs"
@@ -359,6 +360,16 @@
         android:layout_gravity="bottom|end"
         android:visibility="gone"
         android:src="@drawable/logo"/>
+
+    <ImageView
+        android:id="@+id/floatingImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        android:elevation="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/explore_image" />
 
 
 </FrameLayout>

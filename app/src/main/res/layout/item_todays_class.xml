@@ -15,6 +15,7 @@
         app:cardElevation="0dp">
 
         <FrameLayout
+            android:id="@+id/backGround"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/back_todays_classes">
