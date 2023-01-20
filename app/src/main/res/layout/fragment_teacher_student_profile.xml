@@ -16,7 +16,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp">
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingBottom="100dp">
 
                 <LinearLayout
                     android:id="@+id/ed_toolbar"
@@ -389,6 +390,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/card_view_contact"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+
                     android:layout_marginTop="@dimen/_20sdp"
                     app:cardCornerRadius="@dimen/_25sdp"
                     android:paddingLeft="@dimen/_14sdp"
