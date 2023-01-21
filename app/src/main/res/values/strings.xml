@@ -57,4 +57,6 @@
     <string name="attendance_button_text">Attendance</string>
     <string name="card_skills_des"><b><font color="#383838">Skills you\'ll gain:</font></b> Radian Measure, Triangle Solution, Amplitude, Solving Trigonometric Equation</string>
     <string name="enroll_now"><u>Enroll now</u></string>
+    <string name="duties_stats">Duties Stats</string>
+    <string name="_310hours">31 hours</string>
 </resources>

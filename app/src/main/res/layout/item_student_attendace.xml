@@ -14,6 +14,7 @@
     android:orientation="horizontal">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/student_detail_card_view"
         android:layout_width="0dp"
         android:layout_height="@dimen/_40sdp"
         app:cardBackgroundColor="@color/teachers_dark_pink"

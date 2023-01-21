@@ -211,6 +211,7 @@
                         android:text="Personal Info" />
 
                     <com.google.android.material.tabs.TabItem
+                        android:id="@+id/attendence_tab"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Attendance" />
@@ -229,6 +230,19 @@
 
 
                 </com.google.android.material.tabs.TabLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recMonths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tabs"
+                    />
 
 
                 <androidx.cardview.widget.CardView
@@ -486,7 +500,6 @@
                             app:tint="@color/lite_grey" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
                 </androidx.cardview.widget.CardView>
 
