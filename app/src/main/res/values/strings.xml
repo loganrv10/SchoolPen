@@ -57,4 +57,8 @@
     <string name="attendance_button_text">Attendance</string>
     <string name="card_skills_des"><b><font color="#383838">Skills you\'ll gain:</font></b> Radian Measure, Triangle Solution, Amplitude, Solving Trigonometric Equation</string>
     <string name="enroll_now"><u>Enroll now</u></string>
+    <string name="rupee">₹</string>
+    <string name="tution_fees">Tution Fees........................ $4500</string>
+    <string name="library_fees">Library Fees.................. $500</string>
+    <string name="school_fund">School Fund....................... $1500</string>
 </resources>
