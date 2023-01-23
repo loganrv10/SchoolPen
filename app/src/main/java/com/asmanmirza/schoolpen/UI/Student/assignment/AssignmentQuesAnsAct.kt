@@ -48,8 +48,6 @@ class AssignmentQuesAnsAct : BaseActivity(), View.OnClickListener {
             imgMarkMsgAssignmentQuesAnsAct.setOnClickListener(this@AssignmentQuesAnsAct)
             imgExclamationAssignmentQuesAnsAct.setOnClickListener(this@AssignmentQuesAnsAct)
             txtMarksAssignmentQuesAnsAct.text = "${resources.getString(R.string.marks)} 4"
-
-
         }
 
         setAdapterData()

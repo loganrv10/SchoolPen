@@ -89,4 +89,13 @@
     <string name="demo2_question">Plaster of paris is prepared from Gypsum?</string>
     <string name="fill_in_blanks_multiple">Plaster of paris is prepared from________. How this chgemical substance is written________?</string>
     <string name="fill_in_blanks">Plaster of paris is prepared from________.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="teacher">Teachers</string>
+    <string name="classmates">Classmates</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="calendar">Calendar</string>
+    <string name="school_board">School Board</string>
+    <string name="fee_portal">Fee Portal</string>
+    <string name="exit">Exit</string>
 </resources>

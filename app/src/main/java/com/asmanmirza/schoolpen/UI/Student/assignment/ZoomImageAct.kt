@@ -13,6 +13,7 @@ class ZoomImageAct : BaseActivity(),View.OnClickListener {
 
     lateinit var binding:ActivityZoomImageBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
