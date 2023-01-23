@@ -39,13 +39,13 @@
                 android:id="@+id/mvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fee Portal"
+                android:text="Make Payment"
                 android:textColor="#707070"
                 android:textSize="@dimen/_16sdp"
                 app:fontFamily="@font/lato_semi_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -53,14 +53,48 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/back_with_stroke_30sdp"
+        android:backgroundTint="#f4effb"
+        android:elevation="10dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:outlineAmbientShadowColor="#AAAAAA"
+        android:outlineSpotShadowColor="#AAAAAA"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:tabBackground="@drawable/calander_tab_back"
+        app:tabIndicator="@android:color/transparent"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/calander_text"
+        app:tabTextColor="#707070">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School Fees" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Fees" />
+
+    </com.google.android.material.tabs.TabLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutHeader" />
+        app:layout_constraintTop_toBottomOf="@id/tabs" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

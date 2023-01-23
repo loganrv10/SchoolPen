@@ -59,6 +59,7 @@
     <string name="enroll_now"><u>Enroll now</u></string>
     <string name="rupee">₹</string>
     <string name="tution_fees">Tution Fees........................ $4500</string>
-    <string name="library_fees">Library Fees.................. $500</string>
+    <string name="library_fees">Library Fees.................... $500</string>
     <string name="school_fund">School Fund....................... $1500</string>
+    <string name="make_payment">Make Payment</string>
 </resources>
