@@ -63,7 +63,7 @@
                 android:includeFontPadding="false"
                 android:paddingTop="@dimen/_8sdp"
                 android:paddingBottom="@dimen/_8sdp"
-                android:text="2022"
+                android:text="2023"
                 android:textColor="@color/color_primary"
                 android:textSize="@dimen/_18ssp" />
 

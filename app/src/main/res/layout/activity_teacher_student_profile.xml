@@ -87,11 +87,12 @@
                     android:paddingRight="@dimen/_14sdp"
                     android:background="#F9EEEF">
 
-                    <com.google.android.material.imageview.ShapeableImageView
+                    <com.rishabhharit.roundedimageview.RoundedImageView
                         android:id="@+id/profile_image"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/_10ssp"
+                        app:cornerRadius="@dimen/_10sdp"
                         android:src="@drawable/tina"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -169,6 +170,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
                     android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_12ssp"
                     android:text="Class Representative"
                     android:textColor="#383838"/>
 
@@ -176,6 +178,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_11ssp"
                     android:fontFamily="@font/poppins_medium"
                     android:text="Profound artist and ethuastic science student "
                     android:textColor="@color/attendance_title"
@@ -272,8 +275,9 @@
                         android:text="About"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:textStyle="bold"
+                        android:fontFamily="@font/poppins_semi_bold"
                         android:textColor="@color/attendance_title"
-                        android:textSize="@dimen/_20sdp"/>
+                        android:textSize="@dimen/_16ssp"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -281,6 +285,7 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_11ssp"
                         android:text="Love to experiment with new ideas, enjoy the process of discovery. I am very enthuastic to learn new concepts in the field of chemistry. I want to become a Bio-scientist in future and study genealogy."
                         android:textColor="@color/black" />
 
