@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/label_duties_stats"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/label_duties_stats"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_15ssp"
         app:cardCornerRadius="@dimen/_25sdp"
         app:cardElevation="4dp">
 
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/label_duties_stats"
         app:layout_constraintStart_toEndOf="@+id/cardview_teaching"
-        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_15ssp"
         app:cardCornerRadius="@dimen/_25sdp"
         app:cardElevation="4dp">
 
@@ -149,7 +149,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/cardview_teaching"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_15ssp"
         android:layout_marginTop="@dimen/_20ssp"
         app:cardCornerRadius="@dimen/_25sdp"
         app:cardElevation="4dp">
@@ -209,7 +209,7 @@
         android:layout_marginTop="@dimen/_20ssp"
         app:layout_constraintTop_toBottomOf="@+id/cardview_classmissed"
         app:layout_constraintStart_toEndOf="@+id/cardview_teaching"
-        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_15ssp"
         app:cardCornerRadius="@dimen/_25sdp"
         app:cardElevation="4dp">
 
@@ -269,7 +269,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/cardview_attendence"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_15ssp"
         android:layout_marginTop="@dimen/_20ssp"
         app:cardCornerRadius="@dimen/_25sdp"
         app:cardElevation="4dp">
@@ -329,7 +329,7 @@
         android:layout_marginTop="@dimen/_20ssp"
         app:layout_constraintTop_toBottomOf="@+id/cardview_attendence"
         app:layout_constraintStart_toEndOf="@+id/cardview_teaching"
-        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_15sdp"
         app:cardCornerRadius="@dimen/_25sdp"
         app:cardElevation="4dp">
 
@@ -477,7 +477,7 @@
             android:layout_height="@dimen/_150sdp"
             app:cardCornerRadius="@dimen/_25sdp"
             app:cardElevation="0dp"
-            android:layout_marginStart="@dimen/_30ssp"
+            android:layout_marginStart="@dimen/_20ssp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -618,7 +618,7 @@
                 android:layout_height="@dimen/_150sdp"
                 app:cardCornerRadius="@dimen/_25sdp"
                 app:cardElevation="0dp"
-                android:layout_marginStart="@dimen/_30ssp"
+                android:layout_marginStart="@dimen/_20ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
