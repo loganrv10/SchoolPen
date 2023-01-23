@@ -23,13 +23,14 @@
                 android:orientation="horizontal"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_140sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_weight="1"
                     app:cardCornerRadius="@dimen/_15sdp"
-                    app:cardElevation="0dp">
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -63,10 +64,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:fontFamily="@font/lato_regular"
-                                android:text="6000"
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -86,15 +87,16 @@
 
                     </FrameLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_140sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_weight="1"
                     app:cardCornerRadius="@dimen/_15sdp"
-                    app:cardElevation="0dp">
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -128,10 +130,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:fontFamily="@font/lato_regular"
-                                android:text="6000"
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -149,7 +151,7 @@
 
                     </FrameLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
             </LinearLayout>
 
@@ -163,13 +165,14 @@
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@id/box_1">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_140sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_weight="1"
                     app:cardCornerRadius="@dimen/_15sdp"
-                    app:cardElevation="0dp">
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -203,10 +206,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:fontFamily="@font/lato_regular"
-                                android:text="6000"
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -224,15 +227,16 @@
 
                     </FrameLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_140sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_weight="1"
                     app:cardCornerRadius="@dimen/_15sdp"
-                    app:cardElevation="0dp">
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -267,10 +271,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:fontFamily="@font/lato_regular"
-                                android:text="6000"
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -288,7 +292,7 @@
 
                     </FrameLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
             </LinearLayout>
 
