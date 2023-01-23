@@ -56,14 +56,15 @@
                 android:layout_marginEnd="@dimen/_15sdp"
 
                 android:layout_marginTop="@dimen/_10sdp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Akirti Sharma"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semi_bold"
-                android:textSize="@dimen/_15ssp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:text="Akirti Sharma"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
 
                 <ImageButton
                     android:layout_width="wrap_content"

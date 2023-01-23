@@ -15,5 +15,9 @@
     <color name="homework_detail_tint">#44C2E1</color>
     <color name="tabs_color">#707070</color>
     <color name="parent_ui">#83D39D</color>
+    <color name="black_title_text">#383838</color>
+    <color name="pure_black">#000000</color>
     <color name="parent_light">#56E484</color>
+    <color name="dark_skyblue">#89F5FE</color>
+    <color name="light_sky_blue">#C4FAFF</color>
 </resources>

@@ -59,4 +59,36 @@
     <string name="enroll_now"><u>Enroll now</u></string>
     <string name="duties_stats">Duties Stats</string>
     <string name="_310hours">31 hours</string>
+
+    <!--ASSIGNMENT TEXT-->
+    <string name="home_work">Homework</string>
+    <string name="start_test">Start Test</string>
+    <string name="instruction">Instructions</string>
+    <string name="marked_for_review">Marked For\nreview</string>
+    <string name="good_to_submit">Good to\nsubmit</string>
+    <string name="submit">Submit</string>
+    <string name="questions">Questions</string>
+    <string name="success">Success!</string>
+    <string name="skipped_question">Skipped\nQuestion</string>
+    <string name="circle_on_qus_no">Circles on Question numbers</string>
+    <string name="success_msg">Hurray! Your Submissions has been sent to your teacher</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="attempted_questions">Attempted Questions</string>
+    <string name="skipped_questions">Skipped Questions</string>
+    <string name="total_questions">Total Questions</string>
+    <string name="return_to_home">Return To Homework</string>
+    <string name="marks">Marks:</string>
+    <string name="save_and_next">Save and Next</string>
+    <string name="hundred_word">100 max words</string>
+    <string name="one_word">One word</string>
+    <string name="type_answer_hint">Type your answer here</string>
+    <string name="or">OR</string>
+    <string name="browse_file_here">Browse your file here</string>
+    <string name="true_title">True</string>
+    <string name="false_title">False</string>
+    <string name="instruction_demo_text">User can swipe left &amp; right to change question.\n\nThe selected option will be saved only after Clicking ‘ Save and Next’\n\nQuestions with ‘Mark for review ‘ will not considered untill user click on ‘save and next’ before submitting.\n\nAnswer will automatically submit as soon as time ends.</string>
+    <string name="demo_question">Plaster of paris is prepared from?</string>
+    <string name="demo2_question">Plaster of paris is prepared from Gypsum?</string>
+    <string name="fill_in_blanks_multiple">Plaster of paris is prepared from________. How this chgemical substance is written________?</string>
+    <string name="fill_in_blanks">Plaster of paris is prepared from________.</string>
 </resources>
