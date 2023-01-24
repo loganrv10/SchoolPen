@@ -215,7 +215,7 @@ class CalanderActivity : AppCompatActivity() {
 
     @SuppressLint("SimpleDateFormat")
     fun getDate(date:String, month:Int): String{
-        return if(month - 1 == 0){
+        return if(month - 1 < 0){
             "${if(date.toInt() < 10) "0$date" else date}/12/${binding.selectedCalander.text.toString().toInt() - 1}"
         }else if(month > 12){
             "${if(date.toInt() < 10) "0$date" else date}/01/${binding.selectedCalander.text.toString().toInt() + 1}"
