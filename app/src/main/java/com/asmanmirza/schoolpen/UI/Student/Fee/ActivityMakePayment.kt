@@ -1,4 +1,4 @@
-package com.asmanmirza.schoolpen.UI.Fee
+package com.asmanmirza.schoolpen.UI.Student.Fee
 
 import android.os.Bundle
 import android.view.View

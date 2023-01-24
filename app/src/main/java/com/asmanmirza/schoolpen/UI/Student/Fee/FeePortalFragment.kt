@@ -1,4 +1,4 @@
-package com.asmanmirza.schoolpen.UI.Fee
+package com.asmanmirza.schoolpen.UI.Student.Fee
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.asmanmirza.schoolpen.R
-import com.asmanmirza.schoolpen.UI.Fee.Adapter.PaymentHistoryAdapter
+import com.asmanmirza.schoolpen.UI.Student.Fee.Adapter.PaymentHistoryAdapter
 import com.asmanmirza.schoolpen.databinding.FragmentFeePortalBinding
 
 

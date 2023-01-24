@@ -1,4 +1,4 @@
-package com.asmanmirza.schoolpen.UI.Fee.Adapter
+package com.asmanmirza.schoolpen.UI.Student.Fee.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.asmanmirza.schoolpen.R
-import com.asmanmirza.schoolpen.UI.Fee.DemoData
+import com.asmanmirza.schoolpen.UI.Student.Fee.DemoData
 
 
 class PaymentHistoryAdapter(private val data: List<DemoData>, private val context: Context) :

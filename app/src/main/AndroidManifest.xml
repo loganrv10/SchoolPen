@@ -18,14 +18,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".UI.Fee.ActivityFeePortal"
+            android:name=".UI.Student.Fee.ActivityFeePortal"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".UI.Fee.ActivityMakePayment"
+            android:name=".UI.Student.Fee.ActivityMakePayment"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

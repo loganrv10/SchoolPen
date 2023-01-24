@@ -1,4 +1,4 @@
-package com.asmanmirza.schoolpen.UI.Fee
+package com.asmanmirza.schoolpen.UI.Student.Fee
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.asmanmirza.schoolpen.R
-import com.asmanmirza.schoolpen.databinding.FragmentMakepaymentBinding
+import com.asmanmirza.schoolpen.databinding.FragmentFeeDetailBinding
 
-class FragmentMakePayment: Fragment(), View.OnClickListener {
+class FragmentPaymentHistory: Fragment() {
 
-    private var _binding: FragmentMakepaymentBinding? = null
+    private var _binding: FragmentFeeDetailBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,14 +18,13 @@ class FragmentMakePayment: Fragment(), View.OnClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMakepaymentBinding.inflate(inflater, container, false)
+        _binding = FragmentFeeDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.box1.setOnClickListener (this)
     }
 
     private fun openFragment(fragment: Fragment) {
@@ -33,13 +32,5 @@ class FragmentMakePayment: Fragment(), View.OnClickListener {
         transaction?.replace(R.id.container, fragment)
         transaction?.addToBackStack(null)
         transaction?.commit()
-    }
-
-    override fun onClick(v: View?) {
-        when (v?.id){
-            R.id.box_1 -> {
-                openFragment(FragmentPaymentHistory())
-            }
-        }
     }
 }

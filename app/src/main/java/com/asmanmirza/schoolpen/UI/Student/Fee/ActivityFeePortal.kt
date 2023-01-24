@@ -1,11 +1,11 @@
-package com.asmanmirza.schoolpen.UI.Fee
+package com.asmanmirza.schoolpen.UI.Student.Fee
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.asmanmirza.schoolpen.R
-import com.asmanmirza.schoolpen.UI.Fee.Adapter.PaymentHistoryAdapter
+import com.asmanmirza.schoolpen.UI.Student.Fee.Adapter.PaymentHistoryAdapter
 import com.asmanmirza.schoolpen.databinding.ActivityFeePortalBinding
 
 class ActivityFeePortal : AppCompatActivity(), View.OnClickListener {
