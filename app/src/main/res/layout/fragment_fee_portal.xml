@@ -18,7 +18,7 @@
                 android:id="@+id/tvPending"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pending Fee"
+                android:text="@string/pending_fee"
                 android:textColor="#383838"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold"
@@ -45,33 +45,33 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvTutionFee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_12sdp"
                         android:layout_marginTop="@dimen/_15sdp"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Tution Fees"
+                        android:text="@string/tution_fee"
                         android:textColor="#FFFFFF"
-                        android:textSize="@dimen/_12ssp"
+                        android:textSize="@dimen/_10ssp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvStudentFee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_12sdp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="September Fees"
+                        android:text="@string/september_fees"
                         android:textColor="#FFFFFF"
                         android:textSize="@dimen/_16ssp"
                         app:layout_constraintStart_toStartOf="@id/tvTutionFee"
                         app:layout_constraintTop_toBottomOf="@id/tvTutionFee" />
 
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvFeeAmount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -79,20 +79,20 @@
                         android:drawableStart="@drawable/vector_rupee_"
                         android:drawablePadding="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="6000"
+                        android:text="@string/_6000"
                         android:textColor="#FFFFFF"
                         android:textSize="@dimen/_24ssp"
                         app:layout_constraintStart_toStartOf="@id/tvStudentFee"
                         app:layout_constraintTop_toBottomOf="@id/tvStudentFee" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_16sdp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Last Date 14/10/2022"
+                        android:text="@string/last_date_14_10_2022"
                         android:textColor="#FFFFFF"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_24sdp"
                 android:gravity="center"
-                android:text="Payment History"
+                android:text="@string/payment_history"
                 android:textColor="#383838"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold"
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/btnSortBy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -144,11 +144,11 @@
                         android:paddingTop="@dimen/_4sdp"
                         android:paddingEnd="@dimen/_4sdp"
                         android:paddingBottom="@dimen/_4sdp"
-                        android:text="Sort By"
+                        android:text="@string/sort_by"
                         android:textColor="#9163d7"
                         android:textSize="@dimen/_10ssp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/btnFilter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -163,11 +163,11 @@
                         android:paddingTop="@dimen/_6sdp"
                         android:paddingEnd="@dimen/_10sdp"
                         android:paddingBottom="@dimen/_6sdp"
-                        android:text="Filter"
+                        android:text="@string/filter"
                         android:textColor="#9163d7"
                         android:textSize="@dimen/_10ssp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
@@ -178,11 +178,11 @@
                         android:paddingTop="@dimen/_7sdp"
                         android:paddingEnd="@dimen/_14sdp"
                         android:paddingBottom="@dimen/_7sdp"
-                        android:text="Tution Fee"
+                        android:text="@string/tution_fee"
                         android:textColor="#9163d7"
                         android:textSize="@dimen/_10ssp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
@@ -193,7 +193,7 @@
                         android:paddingTop="@dimen/_7sdp"
                         android:paddingEnd="@dimen/_14sdp"
                         android:paddingBottom="@dimen/_7sdp"
-                        android:text="Library"
+                        android:text="@string/library"
                         android:textColor="#9163d7"
                         android:textSize="@dimen/_10ssp" />
                 </LinearLayout>

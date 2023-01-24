@@ -37,19 +37,19 @@
                         android:layout_height="match_parent"
                         android:background="@color/white">
 
-                        <ImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
                             android:src="@drawable/gradient_btn" />
 
-                        <TextView
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="@dimen/_15sdp"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="1st Quater"
+                            android:text="@string/_1st_quater"
                             android:textColor="#ffffff"
                             android:textSize="@dimen/_12ssp" />
 
@@ -67,7 +67,7 @@
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="6000"
+                                android:text="@string/_6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -79,7 +79,7 @@
                                 android:drawableStart="@drawable/vector_save_"
                                 android:drawablePadding="@dimen/_5sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="Paid"
+                                android:text="@string/paid"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_13ssp" />
 
@@ -103,7 +103,7 @@
                         android:layout_height="match_parent"
                         android:background="@color/white">
 
-                        <ImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
@@ -115,7 +115,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="@dimen/_15sdp"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="2nd Quater"
+                            android:text="@string/_2nd_quater"
                             android:textColor="#ffffff"
                             android:textSize="@dimen/_12ssp" />
 
@@ -133,7 +133,7 @@
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="6000"
+                                android:text="@string/_6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -143,7 +143,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="@dimen/_4sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="Due this month"
+                                android:text="@string/due_this_month"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_13ssp" />
 
@@ -179,7 +179,7 @@
                         android:layout_height="match_parent"
                         android:background="@color/white">
 
-                        <ImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
@@ -191,7 +191,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="@dimen/_15sdp"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="3rd Quater"
+                            android:text="@string/_3rd_quater"
                             android:textColor="#ffffff"
                             android:textSize="@dimen/_12ssp" />
 
@@ -209,7 +209,7 @@
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="6000"
+                                android:text="@string/_6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -219,7 +219,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="@dimen/_4sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="Pay on May"
+                                android:text="@string/pay_on_may"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_13ssp" />
 
@@ -243,7 +243,7 @@
                         android:layout_height="match_parent"
                         android:background="@color/white">
 
-                        <ImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
@@ -256,7 +256,7 @@
                             android:layout_marginTop="@dimen/_15sdp"
                             android:fontFamily="@font/poppins_medium"
                             android:gravity="center"
-                            android:text="4th Quater"
+                            android:text="@string/_4th_quater"
                             android:textColor="#ffffff"
                             android:textSize="@dimen/_12ssp" />
 
@@ -274,7 +274,7 @@
                                 android:drawableStart="@drawable/vector_rupee_"
                                 android:drawablePadding="@dimen/_5sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="6000"
+                                android:text="@string/_6000"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_24ssp" />
 
@@ -284,7 +284,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="@dimen/_4sdp"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="Pay on Nov"
+                                android:text="@string/pay_on_nov"
                                 android:textColor="#ffffff"
                                 android:textSize="@dimen/_13ssp" />
 
