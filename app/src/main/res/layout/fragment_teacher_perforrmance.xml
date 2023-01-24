@@ -411,6 +411,7 @@
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_150sdp"
             app:cardCornerRadius="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             app:cardElevation="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -477,7 +478,7 @@
             android:layout_height="@dimen/_150sdp"
             app:cardCornerRadius="@dimen/_25sdp"
             app:cardElevation="0dp"
-            android:layout_marginStart="@dimen/_20ssp"
+            android:layout_marginStart="@dimen/_10ssp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

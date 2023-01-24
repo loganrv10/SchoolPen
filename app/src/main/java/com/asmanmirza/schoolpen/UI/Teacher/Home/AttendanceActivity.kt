@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.asmanmirza.schoolpen.Adapters.AdapterAttendance
 import com.asmanmirza.schoolpen.Helpers.ItemClickSupport
 import com.asmanmirza.schoolpen.Models.ModelAttendance
+import com.asmanmirza.schoolpen.UI.Teacher.Fragments.TeacherSceduleClassFragment
 import com.asmanmirza.schoolpen.databinding.ActivityAttendanceBinding
 
 class AttendanceActivity : AppCompatActivity() {
@@ -36,7 +37,8 @@ class AttendanceActivity : AppCompatActivity() {
                 finish()
             }
             nextButton.setOnClickListener {
-                Toast.makeText(this@AttendanceActivity, "You cannot visit this section", Toast.LENGTH_SHORT).show()
+                var intent = Intent(this@AttendanceActivity, TeacherLiveClassActivity::class.java)
+                startActivity(intent)
             }
             recAttendance.layoutManager = LinearLayoutManager(this@AttendanceActivity, LinearLayoutManager.VERTICAL, false)
             getStudents()

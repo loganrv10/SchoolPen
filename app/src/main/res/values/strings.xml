@@ -91,4 +91,8 @@
     <string name="demo2_question">Plaster of paris is prepared from Gypsum?</string>
     <string name="fill_in_blanks_multiple">Plaster of paris is prepared from________. How this chgemical substance is written________?</string>
     <string name="fill_in_blanks">Plaster of paris is prepared from________.</string>
+    <string name="love_to_experiment_with_new_ideas_enjoy_the_process_of_discovery_i_am_very_enthuastic_to_learn_new_concepts_in_the_field_of_chemistry_i_want_to_become_a_bio_scientist_in_future_and_study_genealogy">Love to experiment with new ideas, enjoy the process of discovery. I am very enthuastic to learn new concepts in the field of chemistry. I want to become a Bio-scientist in future and study genealogy.</string>
+    <string name="connect_with_students_parents"><![CDATA[Connect with students & Parents]]></string>
+    <string name="live_class_meetings"><![CDATA[Live Class & Meetings]]></string>
+    <string name="if_you_received_an_invitation_link_tap_on_the_link_to_join_the_meeting">If you received an invitation link, tap on the link to join the meeting</string>
 </resources>
