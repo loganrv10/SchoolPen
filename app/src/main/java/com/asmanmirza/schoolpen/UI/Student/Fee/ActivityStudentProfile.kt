@@ -44,7 +44,7 @@ class ActivityStudentProfile : AppCompatActivity(), View.OnClickListener {
                     )
                 )
             }
-            R.id.back_button ->{
+            R.id.back_button -> {
                 finish()
             }
         }

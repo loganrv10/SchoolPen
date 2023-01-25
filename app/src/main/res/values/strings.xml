@@ -115,4 +115,6 @@
     <string name="save">Save</string>
     <string name="_34fd5">34FD5</string>
     <string name="copy_code">Copy Code</string>
+    <string name="your_speed_is_very_good_maintain_this_and_your_score_will_never_get_down">Stay focused to maintain your grade \nIncrease your accuracy to perform better, send more time in understanding the concepts \nYour speed is very good, maintain this and your score will never get down.</string>
+    <string name="total_questions">Total Questions : </string>
 </resources>
