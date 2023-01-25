@@ -24,6 +24,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity
+            android:name=".UI.Student.Fee.ActivityEditProfileStudent"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".UI.Student.Fee.ActivityFeePortal"
             android:exported="false">

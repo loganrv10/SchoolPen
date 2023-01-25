@@ -96,4 +96,23 @@
     <string name="sort_by">Sort By</string>
     <string name="filter">Filter</string>
     <string name="library">Library</string>
+    <string name="invite_your_parents_to_our_n_parents_app">Invite your Parents to our \n Parents app</string>
+    <string name="student">Student</string>
+    <string name="class_v">Class V</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="address">Address</string>
+    <string name="delhi_india">Delhi, India</string>
+    <string name="email">Email</string>
+    <string name="akriti_singhal_gmail_com">akriti_singhal@gmail.com</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="_19_08_1995">19/08/1995</string>
+    <string name="perent_s_detail">Perent\'s Detail</string>
+    <string name="invite_your_parents_nand_explore_our_parents_app">Invite your parents \nand explore our parents app</string>
+    <string name="invite">Invite</string>
+    <string name="dinesh_singhal">Dinesh Singhal</string>
+    <string name="name">Name</string>
+    <string name="ankit_singhal">Ankit Singhal</string>
+    <string name="save">Save</string>
+    <string name="_34fd5">34FD5</string>
+    <string name="copy_code">Copy Code</string>
 </resources>

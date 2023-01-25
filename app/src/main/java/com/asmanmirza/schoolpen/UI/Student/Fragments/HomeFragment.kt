@@ -105,6 +105,10 @@ class HomeFragment : Fragment() {
             })
 
             ivAlert.setOnClickListener {
+                startActivity(Intent(requireContext(), ActivityFeePortal::class.java))
+            }
+
+            ivMessage.setOnClickListener {
                 startActivity(Intent(requireContext(), ActivityStudentProfile::class.java))
             }
 
