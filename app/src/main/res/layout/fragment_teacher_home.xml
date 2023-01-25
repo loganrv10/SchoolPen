@@ -145,6 +145,7 @@
                                 app:tint="@color/teachers_dark_pink" />
 
                             <ImageButton
+                                android:id="@+id/notification_class"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="@dimen/_8sdp"

@@ -108,4 +108,27 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="the_fundamental">What are these structures?
+These structures look similar to each other.
+Together they form a big structure like an
+onion bulb! We find from this activity that
+onion bulbs of different sizes have similar
+small structures visible under a microscope.
+The cells of the onion peel will all look the
+same, regardless of the size of the onion they
+came from.
+These small structures that we see are
+the basic building units of the onion bulb.
+These structures are called cells. Not only Chlamydomonas, Paramoecium and bacteria.
+These organisms are called unicellular
+organisms (uni = single). On the other hand,
+many cells group together in a single body
+and assume different functions in it to form
+various body parts in multicellular organisms
+(multi = many) such as some fungi, plants
+and animals. Can we find out names of some
+more unicellular organisms?
+Every multi-cellular organism has come
+from a single cell. How? Cells divide to
+produce cells of their own kin</string>
 </resources>

@@ -35,7 +35,7 @@ class AttendanceActivity : AppCompatActivity() {
                 finish()
             }
             nextButton.setOnClickListener {
-                val intent = Intent(this@AttendanceActivity, TeacherLiveMeetingActivity::class.java)
+                val intent = Intent(this@AttendanceActivity, TeacherReadingActivity::class.java)
                 startActivity(intent)
             }
             recAttendance.layoutManager = LinearLayoutManager(this@AttendanceActivity, LinearLayoutManager.VERTICAL, false)

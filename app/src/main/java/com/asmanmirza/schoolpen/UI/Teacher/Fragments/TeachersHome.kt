@@ -7,18 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.asmanmirza.schoolpen.UI.Teacher.Home.ChatHomeActivity
-import com.asmanmirza.schoolpen.UI.Teacher.Home.StartClassIntroActivity
-import com.asmanmirza.schoolpen.UI.Teacher.Home.TeacherTimeTableActivity
-import com.asmanmirza.schoolpen.UI.Teacher.Home.TeachersLeaveActivity
 import com.asmanmirza.schoolpen.Adapters.AdapterEvents
 import com.asmanmirza.schoolpen.Models.ModelDates
 import com.asmanmirza.schoolpen.Models.ModelEvents
 import com.asmanmirza.schoolpen.Adapters.AdapterHomeDates
 import com.asmanmirza.schoolpen.Helpers.TinyDB
+import com.asmanmirza.schoolpen.UI.Teacher.Home.*
 import com.asmanmirza.schoolpen.UI.Teacher.Home.AssignedClasses.AssignedClassActivity
 import com.asmanmirza.schoolpen.UI.Teacher.Profile.ProfileTeacherActivity
 import com.asmanmirza.schoolpen.databinding.FragmentTeacherHomeBinding
@@ -46,6 +42,10 @@ class TeachersHome : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.startClass.btnStartClass.setOnClickListener {
             navigateToAttendance()
+        }
+
+        binding.notificationClass.setOnClickListener{
+            startActivity(Intent(requireContext(), TeacherLiveMeetingActivity::class.java))
         }
 
         binding.btnChat.setOnClickListener{

@@ -260,19 +260,19 @@
                         android:paddingTop="@dimen/_5sdp"
                         android:paddingBottom="@dimen/_5sdp"
                         android:switchMinWidth="0dp"
-                        android:text="Invite Parents"
+                        android:text="Add to calendar"
                         android:textSize="@dimen/_12ssp"
                         android:backgroundTint="@color/teachers_ui"
                         android:checked="true"
-                        android:thumb="@drawable/thumb_selector"
+                        android:thumb="@drawable/thumb_teacher_selector"
                         android:thumbTextPadding="@dimen/_40sdp"
-                        android:track="@drawable/track_selector"
+                        android:track="@drawable/track_selector_teacher"
                         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
                     <Switch
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingTop="@dimen/_5sdp"
@@ -282,9 +282,9 @@
                         android:textSize="@dimen/_12ssp"
                         android:backgroundTint="@color/teachers_ui"
                         android:checked="true"
-                        android:thumb="@drawable/thumb_selector"
+                        android:thumb="@drawable/thumb_teacher_selector"
                         android:thumbTextPadding="@dimen/_40sdp"
-                        android:track="@drawable/track_selector"
+                        android:track="@drawable/track_selector_teacher"
                         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 
