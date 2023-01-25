@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.asmanmirza.schoolpen.R
 import com.asmanmirza.schoolpen.databinding.ActivityCumulativeGradeBinding
+import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.Legend
-import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.*
+import com.github.mikephil.charting.formatter.IAxisValueFormatter
 import com.github.mikephil.charting.highlight.Highlight
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 
 
 class CumulativeGradeActivity : AppCompatActivity() {
@@ -17,12 +19,13 @@ class CumulativeGradeActivity : AppCompatActivity() {
     lateinit var binding:ActivityCumulativeGradeBinding
     lateinit var pieEntry: ArrayList<PieEntry>
     lateinit var barEntriesArrayList: ArrayList<BarEntry>
-    lateinit var lineEntriesArrayList: ArrayList<Entry>
+   // lateinit var lineEntriesArrayList: ArrayList<Entry>
     lateinit var pieDataSet: PieDataSet
     lateinit var pieData: PieData
     lateinit var barData: BarData
     lateinit var barDataSet: BarDataSet
-    lateinit var lineDataSet: LineDataSet
+//    lateinit var lineDataSet: LineDataSet
+    lateinit var lineDataSetList: ArrayList<ILineDataSet>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,9 +52,9 @@ class CumulativeGradeActivity : AppCompatActivity() {
 
     fun setLineChart(){
 
-        lineEntriesArrayList = getDataSet()
-        lineDataSet = LineDataSet(lineEntriesArrayList, "")
 
+        getDataSet()
+        /*lineDataSet = LineDataSet(lineDataSetList)
         lineDataSet.apply {
 
             setAxisDependency(YAxis.AxisDependency.LEFT)
@@ -68,31 +71,25 @@ class CumulativeGradeActivity : AppCompatActivity() {
             setValueTextColor(Color.DKGRAY)
             setMode(LineDataSet.Mode.STEPPED)
 
-        }
+        }*/
         binding.apply {
 
             lineChart.setTouchEnabled(true)
             lineChart.setPinchZoom(true)
 
-            val lineData = LineData(lineDataSet)
+            val lineData = LineData(lineDataSetList)
             lineChart.getDescription().setTextSize(10f)
             lineChart.getDescription().setEnabled(false)
             lineChart.animateY(1000)
             lineChart.setData(lineData)
 
-            // Setup Y Axis
-            /*val yAxis = lineChart.axisLeft
-            yAxis.axisMinimum = 0f
-            yAxis.axisMaximum = 3f
-            yAxis.granularity = 1f*/
-
-            lineChart.getAxisRight().setEnabled(false)
-            //lineChart.xAxis.isEnabled = false
-            lineChart.invalidate()
-
             //Hide the bottom colors
             val l: Legend = binding.lineChart.getLegend() // get legend of pie
             l.isEnabled = false
+
+            lineChart.getAxisRight().setEnabled(false)
+            lineChart.xAxis.isEnabled = false
+            lineChart.invalidate()
         }
     }
 
@@ -217,20 +214,85 @@ class CumulativeGradeActivity : AppCompatActivity() {
         return  barEntriesArrayList
     }
 
-    private fun getDataSet(): ArrayList<Entry> {
-        val lineEntries: ArrayList<Entry> = ArrayList()
-        lineEntries.add(Entry(0f, 0f))
-        lineEntries.add(Entry(1f, 10f))
-        lineEntries.add(Entry(2f, 5f))
-        lineEntries.add(Entry(3f, 5f))
-        lineEntries.add(Entry(4f, 8f))
-        lineEntries.add(Entry(5f, 9f))
-        lineEntries.add(Entry(6f, 10f))
-        lineEntries.add(Entry(7f, 6f))
-        lineEntries.add(Entry(8f, 8f))
-        lineEntries.add(Entry(9f, 7f))
-        lineEntries.add(Entry(10f, 9f))
-        lineEntries.add(Entry(11f, 4f))
-        return lineEntries
+    private fun getDataSet()  {
+
+        lineDataSetList = ArrayList()
+
+        val lineEntries1: ArrayList<Entry> = ArrayList()
+        lineEntries1.add(Entry(10f, 5f))
+        lineEntries1.add(Entry(20f, 0f))
+        lineEntries1.add(Entry(30f, 3f))
+        lineEntries1.add(Entry(40f, 1f))
+        lineEntries1.add(Entry(50f, 4f))
+        lineEntries1.add(Entry(60f, 5f))
+        lineEntries1.add(Entry(70f, 6f))
+        lineEntries1.add(Entry(80f, 8f))
+        lineEntries1.add(Entry(90f, 10f))
+        lineEntries1.add(Entry(100f, 9f))
+
+        var lineDataSet1 =  LineDataSet(lineEntries1, "")
+        lineDataSet1.setDrawCircles(true)
+        lineDataSet1.setCircleRadius(4f)
+        lineDataSet1.setDrawValues(false)
+        lineDataSet1.setLineWidth(3f)
+        lineDataSet1.setColor(ContextCompat.getColor(this@CumulativeGradeActivity, R.color.blue_chart))
+        lineDataSet1.setCircleColor(ContextCompat.getColor(this@CumulativeGradeActivity, R.color.blue_chart))
+        lineDataSetList.add(lineDataSet1)
+
+
+        val lineEntries2: ArrayList<Entry> = ArrayList()
+        lineEntries2.add(Entry(10f, 5f))
+        lineEntries2.add(Entry(30f, 0f))
+        lineEntries2.add(Entry(40f, 3f))
+        lineEntries2.add(Entry(60f, 1f))
+        lineEntries2.add(Entry(50f, 4f))
+        lineEntries2.add(Entry(80f, 5f))
+        lineEntries2.add(Entry(85f, 6f))
+        lineEntries2.add(Entry(90f, 8f))
+        lineEntries2.add(Entry(100f, 10f))
+        lineEntries2.add(Entry(80f, 9f))
+
+        var lineDataSet2 =  LineDataSet(lineEntries2, "")
+        lineDataSet2.setDrawCircles(true)
+        lineDataSet2.setCircleRadius(4f)
+        lineDataSet2.setDrawValues(false)
+        lineDataSet2.setLineWidth(3f)
+        lineDataSet2.setColor(ContextCompat.getColor(this@CumulativeGradeActivity, R.color.dark_skyblue_chart))
+        lineDataSet2.setCircleColor(ContextCompat.getColor(this@CumulativeGradeActivity, R.color.dark_skyblue_chart))
+        lineDataSetList.add(lineDataSet2)
+
+        val lineEntries3: ArrayList<Entry> = ArrayList()
+        lineEntries3.add(Entry(20f, 5f))
+        lineEntries3.add(Entry(30f, 0f))
+        lineEntries3.add(Entry(50f, 3f))
+        lineEntries3.add(Entry(40f, 1f))
+        lineEntries3.add(Entry(70f, 4f))
+        lineEntries3.add(Entry(80f, 5f))
+        lineEntries3.add(Entry(85f, 6f))
+        lineEntries3.add(Entry(80f, 8f))
+        lineEntries3.add(Entry(90f, 10f))
+        lineEntries3.add(Entry(100f, 9f))
+
+        var lineDataSet3 =  LineDataSet(lineEntries3, "")
+        lineDataSet3.setDrawCircles(true)
+        lineDataSet3.setCircleRadius(4f)
+        lineDataSet3.setDrawValues(false)
+        lineDataSet3.setLineWidth(3f)
+        lineDataSet3.setColor(ContextCompat.getColor(this@CumulativeGradeActivity, R.color.purple_chart))
+        lineDataSet3.setCircleColor(ContextCompat.getColor(this@CumulativeGradeActivity, R.color.purple_chart))
+        lineDataSetList.add(lineDataSet3)
+
+    }
+
+    class MyXAxisValueFormatter(private val mValues: Array<String>) :
+        IAxisValueFormatter {
+        override fun getFormattedValue(value: Float, axis: AxisBase): String {
+            // "value" represents the position of the label on the axis (x or y)
+            return mValues[value.toInt()]
+        }
+
+        /** this is only needed if numbers are returned, else return 0  */
+        val decimalDigits: Int
+            get() = 0
     }
 }

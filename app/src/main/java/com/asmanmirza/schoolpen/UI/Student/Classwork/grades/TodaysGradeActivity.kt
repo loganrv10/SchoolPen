@@ -1,5 +1,6 @@
 package com.asmanmirza.schoolpen.UI.Student.Classwork.grades
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -40,6 +41,11 @@ class TodaysGradeActivity : AppCompatActivity() {
 
             btnBack.setOnClickListener {
                 finish()
+            }
+
+            binding.cvEnglishGradeCardAct.setOnClickListener {
+                val intent = Intent(this@TodaysGradeActivity, StudentTGradeDetailActivity::class.java)
+                startActivity(intent)
             }
 
             setPieChart()

@@ -18,7 +18,32 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".UI.Student.Classwork.grades.SubjectTPerformanceStatusActivity"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UI.Student.Classwork.grades.StudentTGradeDetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UI.Student.Home.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".UI.Student.Fee.ActivityStudentProfile"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -27,6 +52,7 @@
 
         <activity
             android:name=".UI.Student.Fee.ActivityEditProfileStudent"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -34,6 +60,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Fee.ActivityFeePortal"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,6 +68,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Fee.ActivityMakePayment"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -88,6 +116,7 @@
         </activity>
         <activity
             android:name=".UI.Parent.ParentHomeActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -95,6 +124,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.grading.GardingActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -102,6 +132,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.grading.GradingSubjectWorkActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -109,6 +140,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.AssignedClasses.AssignedClassActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -116,6 +148,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Profile.ProfileTeacherActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -123,6 +156,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Learn.AddFeedQuestionActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -130,6 +164,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Courses.CourseDetailActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -137,13 +172,16 @@
         </activity>
         <activity
             android:name=".UI.Student.Classwork.grades.TodaysGradeActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".UI.Student.Classwork.grades.CumulativeGradeActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -151,6 +189,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Classwork.details.TestDetailActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -158,6 +197,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Classwork.details.HomeWorkDetailActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -165,12 +205,14 @@
         </activity>
         <activity
             android:name=".UI.Student.Home.NoticeActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".UI.Student.Home.PeriodActivity"
             android:exported="false">
             <meta-data
@@ -179,6 +221,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Home.LiveClassDetailActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -186,6 +229,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Home.LiveClassesActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -193,6 +237,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Home.CreateTaskActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -200,6 +245,7 @@
         </activity>
         <activity
             android:name=".UI.Student.Home.CalanderActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -207,6 +253,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.TeachersLeaveActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -214,6 +261,7 @@
         </activity>
         <activity
             android:name=".UI.Student.StudentHome"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -221,6 +269,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.TeacherTimeTableActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -228,6 +277,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.TeacherChatDetailActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -235,6 +285,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.ChatHomeActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -242,6 +293,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.AttendanceActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -249,6 +301,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.StartClassIntroActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -256,6 +309,7 @@
         </activity>
         <activity
             android:name=".UI.Teacher.TeachersHome"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -263,6 +317,7 @@
         </activity>
         <activity
             android:name=".UI.Common.Register.MobileValidationActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -270,6 +325,7 @@
         </activity>
         <activity
             android:name=".UI.Common.Register.SignupActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -277,6 +333,7 @@
         </activity>
         <activity
             android:name=".UI.Common.Register.RoleSelectorActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -284,6 +341,7 @@
         </activity>
         <activity
             android:name=".UI.Common.Login.LoginActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -291,6 +349,7 @@
         </activity>
         <activity
             android:name=".UI.Common.Splash.SplashActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -304,6 +363,7 @@
         </activity>
         <activity
             android:name=".UI.Common.Splash.StartActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -311,6 +371,7 @@
         </activity>
         <activity
             android:name=".UI.Student.profile.ProfileActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

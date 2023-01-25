@@ -109,11 +109,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tabSubjects" />
 
-            <ImageView
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_150sdp"
-                android:scaleType="fitStart"
-                android:src="@drawable/chart__line_gradient_" />
+                android:layout_height="@dimen/_150sdp" />
 
             <TextView
                 android:id="@+id/stats_title"
@@ -168,11 +167,10 @@
                 app:cardCornerRadius="@dimen/_20sdp"
                 app:cardElevation="0dp">
 
-                <ImageView
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/timeLineChart"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_150sdp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/chart__line_gradient_performance_image" />
+                    android:layout_height="@dimen/_150sdp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -444,13 +442,13 @@
                 app:cardBackgroundColor="#EBE4F5"
                 android:layout_marginTop="@dimen/_10sdp">
 
-                <ImageView
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/homeLineGraph"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="@dimen/_15sdp"
-                    android:layout_marginVertical="@dimen/_10sdp"
-                    android:src="@drawable/perform_in_homework" />
+                    android:layout_marginVertical="@dimen/_10sdp"  />
 
             </androidx.cardview.widget.CardView>
 
@@ -484,13 +482,13 @@
                 app:cardBackgroundColor="#EBE4F5"
                 android:layout_marginTop="@dimen/_10sdp">
 
-                <ImageView
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/testLineChart"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="@dimen/_15sdp"
-                    android:layout_marginVertical="@dimen/_10sdp"
-                    android:src="@drawable/perform_in_test" />
+                    android:layout_marginVertical="@dimen/_10sdp" />
 
             </androidx.cardview.widget.CardView>
 
