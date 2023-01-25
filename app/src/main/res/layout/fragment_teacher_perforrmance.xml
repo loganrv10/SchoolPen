@@ -48,7 +48,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/ic_clock"
+                app:srcCompat="@drawable/ic_clock"
                 app:tint="@color/teachers_ui"
                 />
 
@@ -107,7 +107,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/vectorfolder"
+                app:srcCompat="@drawable/vectorfolder"
                 app:tint="@color/teachers_ui"
                 />
 
@@ -168,7 +168,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/vectortroffe"
+                app:srcCompat="@drawable/vectortroffe"
                 app:tint="@color/teachers_ui"
                 />
 
@@ -227,7 +227,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/vectorfile"
+                app:srcCompat="@drawable/vectorfile"
                 app:tint="@color/teachers_ui"
                 />
 
@@ -288,7 +288,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/vectortroffe"
+                app:srcCompat="@drawable/vectortroffe"
                 app:tint="@color/teachers_ui"
                 />
 
@@ -347,7 +347,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/vectorfile"
+                app:srcCompat="@drawable/vectorfile"
                 app:tint="@color/teachers_ui"
                 />
 
@@ -425,7 +425,7 @@
                     android:layout_width="@dimen/_170sdp"
                     android:layout_height="@dimen/_200sdp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/chapter_mask"
+                    app:srcCompat="@drawable/chapter_mask"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -491,7 +491,7 @@
                     android:layout_width="@dimen/_170sdp"
                     android:layout_height="@dimen/_200sdp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/chapter_mask"
+                    app:srcCompat="@drawable/chapter_mask"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -566,7 +566,7 @@
                         android:layout_width="@dimen/_170sdp"
                         android:layout_height="@dimen/_200sdp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/chapter_mask"
+                        app:srcCompat="@drawable/chapter_mask"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -632,7 +632,7 @@
                         android:layout_width="@dimen/_170sdp"
                         android:layout_height="@dimen/_200sdp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/chapter_mask"
+                        app:srcCompat="@drawable/chapter_mask"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

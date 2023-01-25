@@ -29,7 +29,7 @@
            android:id="@+id/certificate_image"
            android:layout_width="match_parent"
            android:layout_height="@dimen/_220sdp"
-           android:src="@drawable/course_certificate"
+           app:srcCompat="@drawable/course_certificate"
            android:scaleType="fitXY"
            app:layout_constraintTop_toBottomOf="@id/certificate_heading"
            app:layout_constraintStart_toStartOf="parent"

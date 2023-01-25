@@ -12,7 +12,7 @@
        android:layout_height="@dimen/_140sdp"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       android:src="@drawable/item_grading_work_top"
+       app:srcCompat="@drawable/item_grading_work_top"
        />
 
    <ImageButton
@@ -21,7 +21,7 @@
        android:layout_height="wrap_content"
       app:layout_constraintTop_toTopOf="@id/topBackground"
       app:layout_constraintStart_toStartOf="@id/topBackground"
-      android:src="@drawable/ic_backback_button"
+      app:srcCompat="@drawable/ic_backback_button"
       android:background="@null"
       android:layout_marginTop="@dimen/_10sdp"
       android:layout_marginLeft="@dimen/_10sdp"
@@ -32,7 +32,7 @@
        android:layout_height="@dimen/_80sdp"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      android:src="@drawable/grading_work_img"
+      app:srcCompat="@drawable/grading_work_img"
       android:layout_marginTop="@dimen/_20sdp"
       android:layout_marginEnd="@dimen/_10sdp"/>
 

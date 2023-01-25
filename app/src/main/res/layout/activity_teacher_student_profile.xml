@@ -22,7 +22,7 @@
             android:background="@android:color/transparent"
             android:paddingHorizontal="@dimen/_20sdp"
             android:paddingVertical="@dimen/_10sdp"
-            android:src="@drawable/ic_teachers_back_icon" />
+            app:srcCompat="@drawable/ic_teachers_back_icon" />
 
         <EditText
             android:layout_width="match_parent"
@@ -120,7 +120,7 @@
                                 android:backgroundTint="#C45162"
                                 android:elevation="@dimen/_3sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:src="@drawable/ic_call_icon_white"
+                                app:srcCompat="@drawable/ic_call_icon_white"
                                 app:tint="@color/white" />
 
                             <ImageView
@@ -132,7 +132,7 @@
                                 android:backgroundTint="#F9EEEF"
                                 android:elevation="@dimen/_3sdp"
                                 android:padding="@dimen/_6sdp"
-                                android:src="@drawable/ic_baseline_chat_bubble_24"
+                                app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
                                 app:tint="#C45162" />
 
                         </LinearLayout>

@@ -27,7 +27,7 @@
                 android:layout_height="match_parent"
                 android:alpha="0.3"
                 android:scaleType="centerCrop"
-                android:src="@drawable/teacher_work_mask" />
+                app:srcCompat="@drawable/teacher_work_mask" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

@@ -48,7 +48,7 @@
                 android:layout_marginStart="0.5dp"
                 android:layout_marginEnd="0.5dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_baseline_circle_10"
+                app:srcCompat="@drawable/ic_baseline_circle_10"
                 android:visibility="gone"
                 app:tint="#3d9f5b" />
 
@@ -59,7 +59,7 @@
                 android:layout_marginStart="0.5dp"
                 android:layout_marginEnd="0.5dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_baseline_circle_10"
+                app:srcCompat="@drawable/ic_baseline_circle_10"
                 android:visibility="gone"
                 app:tint="#f38e20" />
 
@@ -70,7 +70,7 @@
                 android:layout_marginStart="0.5dp"
                 android:layout_marginEnd="0.5dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_baseline_circle_10"
+                app:srcCompat="@drawable/ic_baseline_circle_10"
                 android:visibility="gone"
                 app:tint="#aaaaaa" />
         </LinearLayout>

@@ -1,6 +1,5 @@
 package com.asmanmirza.schoolpen.Helpers;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -14,6 +13,8 @@ import android.view.Choreographer;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.asmanmirza.schoolpen.R;
 
@@ -183,9 +184,9 @@ public class BlurLayout extends FrameLayout {
      * @return View reference for whole activity.
      */
     private View getActivityView() {
-        Activity activity;
+        AppCompatActivity activity;
         try {
-            activity = (Activity) getContext();
+            activity = (AppCompatActivity) getContext();
         } catch (ClassCastException e) {
             return null;
         }

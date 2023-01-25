@@ -64,7 +64,7 @@
         app:layout_constraintTop_toTopOf="@id/instructor_info_container_button"
         app:layout_constraintBottom_toBottomOf="@id/instructor_info_container_button"
         app:layout_constraintEnd_toEndOf="@id/instructor_info_container_button"
-        android:src="@drawable/ic_chat_icon"
+        app:srcCompat="@drawable/ic_chat_icon"
         android:background="@null"
         android:elevation="10dp"
         android:layout_marginEnd="@dimen/_10sdp" />
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="@id/instructor_info_container_button"
         app:layout_constraintBottom_toBottomOf="@id/instructor_info_container_button"
         app:layout_constraintEnd_toStartOf="@id/chat_icon"
-        android:src="@drawable/ic_call_icon"
+        app:srcCompat="@drawable/ic_call_icon"
         android:elevation="10dp"
         android:background="@null"
         android:layout_marginEnd="@dimen/_10sdp" />

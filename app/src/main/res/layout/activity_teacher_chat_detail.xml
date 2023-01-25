@@ -34,7 +34,7 @@
                 android:paddingEnd="@dimen/_6sdp"
                 android:paddingBottom="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
-                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"
                 app:tint="@color/teachers_ui" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -114,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/_20sdp"
-                android:src="@drawable/ic_baseline_more_vert_26"
+                app:srcCompat="@drawable/ic_baseline_more_vert_26"
                 android:background="@android:color/transparent"
                 app:tint="@color/teachers_ui" />
 
@@ -183,7 +183,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_mic_24"
+            app:srcCompat="@drawable/ic_baseline_mic_24"
             android:layout_marginStart="@dimen/_10sdp"
             android:background="@drawable/circle_back"
             android:backgroundTint="@color/teachers_ui"

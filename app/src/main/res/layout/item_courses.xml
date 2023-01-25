@@ -19,7 +19,7 @@
         android:id="@+id/courseImage"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_120sdp"
-        android:src="@drawable/course_image"
+        app:srcCompat="@drawable/course_image"
         android:scaleType="centerCrop"/>
 
     <LinearLayout
@@ -100,7 +100,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_star"
+                app:srcCompat="@drawable/ic_star"
                 android:background="@android:color/transparent"
                 android:layout_marginEnd="@dimen/_3sdp"
                 app:tint="#ebcd09" />

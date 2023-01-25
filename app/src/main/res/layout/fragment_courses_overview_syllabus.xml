@@ -60,7 +60,7 @@
             android:background="@null"
             android:rotation="180"
             android:visibility="gone"
-            android:src="@drawable/ic_arrrow_icon"
+            app:srcCompat="@drawable/ic_arrrow_icon"
             app:layout_constraintBottom_toBottomOf="@+id/chapter_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.822"

@@ -25,7 +25,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_clock"
+                app:srcCompat="@drawable/ic_clock"
                 android:background="@android:color/transparent"
                 app:tint="@color/holo_purple" />
 
@@ -68,7 +68,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_doubt"
+                app:srcCompat="@drawable/ic_doubt"
                 android:background="@android:color/transparent"
                 app:tint="@color/holo_purple" />
 
@@ -118,7 +118,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_test_attempted"
+                app:srcCompat="@drawable/ic_test_attempted"
                 android:background="@android:color/transparent"
                 app:tint="@color/holo_purple" />
 
@@ -161,7 +161,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_homework"
+                app:srcCompat="@drawable/ic_homework"
                 android:background="@android:color/transparent"
                 app:tint="@color/holo_purple" />
 

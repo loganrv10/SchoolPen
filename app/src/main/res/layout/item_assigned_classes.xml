@@ -30,7 +30,7 @@
                     android:layout_width="@dimen/_170sdp"
                     android:layout_height="@dimen/_200sdp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/chapter_mask"
+                    app:srcCompat="@drawable/chapter_mask"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

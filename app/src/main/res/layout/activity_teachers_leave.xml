@@ -9,7 +9,7 @@
         android:id="@+id/back_button"
         android:layout_width="@dimen/_28sdp"
         android:layout_height="@dimen/_28sdp"
-        android:src="@drawable/ic_teachers_back_icon"
+        app:srcCompat="@drawable/ic_teachers_back_icon"
         android:background="@drawable/circle_back"
         android:padding="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_10sdp"
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="@id/leaves_tab"
         app:layout_constraintTop_toTopOf="@id/leaves_tab"
         app:layout_constraintBottom_toBottomOf="@id/leaves_tab"
-        android:src="@drawable/img_fader_mask"
+        app:srcCompat="@drawable/img_fader_mask"
         android:scaleType="fitXY"
         android:elevation="10dp"
         app:layout_constraintEnd_toStartOf="@id/vacation_leave_mask"/>
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toEndOf="@id/sick_leave_mask"
         app:layout_constraintTop_toTopOf="@id/leaves_tab"
         app:layout_constraintBottom_toBottomOf="@id/leaves_tab"
-        android:src="@null"
+        app:srcCompat="@null"
         android:scaleType="fitXY"
         android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="@id/leaves_tab"/>

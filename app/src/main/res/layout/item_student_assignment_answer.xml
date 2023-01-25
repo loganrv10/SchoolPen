@@ -29,7 +29,7 @@
         android:id="@+id/ic_clock"
         android:layout_width="@dimen/_15sdp"
         android:layout_height="@dimen/_15sdp"
-        android:src="@drawable/ic_pink_clock"
+        app:srcCompat="@drawable/ic_pink_clock"
         app:layout_constraintTop_toBottomOf="@id/assignment_question"
         app:layout_constraintStart_toStartOf="parent"
         app:tint="#707070"
@@ -175,7 +175,7 @@
         android:id="@+id/zero_marks_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_zero_icon"
+        app:srcCompat="@drawable/ic_zero_icon"
         app:layout_constraintTop_toBottomOf="@id/marks_given_text"
         app:layout_constraintStart_toStartOf="@id/marks_given_text"
         android:layout_marginTop="@dimen/_5sdp"
@@ -188,7 +188,7 @@
         app:layout_constraintTop_toTopOf="@id/zero_marks_icon"
         app:layout_constraintStart_toEndOf="@id/zero_marks_icon"
         android:layout_marginStart="@dimen/_5sdp"
-        android:src="@drawable/ic_one_icon"/>
+        app:srcCompat="@drawable/ic_one_icon"/>
 
     <ImageView
         android:id="@+id/two_marks_icon"
@@ -197,7 +197,7 @@
         app:layout_constraintTop_toTopOf="@id/zero_marks_icon"
         app:layout_constraintStart_toEndOf="@id/one_marks_icon"
         android:layout_marginStart="@dimen/_5sdp"
-        android:src="@drawable/ic_two_icon"/>
+        app:srcCompat="@drawable/ic_two_icon"/>
 
     <ImageView
         android:id="@+id/three_marks_icon"
@@ -206,7 +206,7 @@
         app:layout_constraintTop_toTopOf="@id/zero_marks_icon"
         app:layout_constraintStart_toEndOf="@id/two_marks_icon"
         android:layout_marginStart="@dimen/_5sdp"
-        android:src="@drawable/ic_three_icon"/>
+        app:srcCompat="@drawable/ic_three_icon"/>
 
     <ImageView
         android:id="@+id/four_marks_icon"
@@ -215,7 +215,7 @@
         app:layout_constraintTop_toTopOf="@id/zero_marks_icon"
         app:layout_constraintStart_toEndOf="@id/three_marks_icon"
         android:layout_marginStart="@dimen/_5sdp"
-        android:src="@drawable/ic_four_icon"/>
+        app:srcCompat="@drawable/ic_four_icon"/>
 
     <TextView
         android:id="@+id/remarks_text"

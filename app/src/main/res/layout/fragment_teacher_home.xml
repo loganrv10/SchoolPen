@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_teacher_top_background" />
+                    app:srcCompat="@drawable/ic_teacher_top_background" />
             </FrameLayout>
 
             <LinearLayout
@@ -48,7 +48,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_round_menu_24"
+                    app:srcCompat="@drawable/ic_round_menu_24"
                     app:tint="@color/white" />
 
                     <ImageButton
@@ -61,7 +61,7 @@
                         android:padding="@dimen/_3sdp"
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:background="@android:color/transparent"
-                        android:src="@drawable/ic_baseline_logout_20"
+                        app:srcCompat="@drawable/ic_baseline_logout_20"
                         app:tint="@color/white" />
 
                 </FrameLayout>
@@ -131,7 +131,7 @@
                                 android:layout_marginEnd="@dimen/_8sdp"
                                 android:background="@drawable/circle_back"
                                 android:padding="@dimen/_5sdp"
-                                android:src="@drawable/ic_baseline_search_24"
+                                app:srcCompat="@drawable/ic_baseline_search_24"
                                 app:tint="@color/teachers_dark_pink" />
 
                             <ImageButton
@@ -141,7 +141,7 @@
                                 android:layout_marginEnd="@dimen/_8sdp"
                                 android:background="@drawable/circle_back"
                                 android:padding="@dimen/_5sdp"
-                                android:src="@drawable/ic_baseline_chat_bubble_24"
+                                app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
                                 app:tint="@color/teachers_dark_pink" />
 
                             <ImageButton
@@ -150,7 +150,7 @@
                                 android:layout_marginEnd="@dimen/_8sdp"
                                 android:background="@drawable/circle_back"
                                 android:padding="@dimen/_5sdp"
-                                android:src="@drawable/ic_baseline_notifications_24"
+                                app:srcCompat="@drawable/ic_baseline_notifications_24"
                                 app:tint="@color/teachers_dark_pink" />
                         </LinearLayout>
                     </LinearLayout>
@@ -180,7 +180,7 @@
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:background="@android:color/transparent"
                         android:fontFamily="@font/poppins_bold"
-                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        app:srcCompat="@drawable/ic_baseline_calendar_month_24"
                         android:text="View Timetable"
                         android:textColor="#50000000"
                         android:textSize="@dimen/_11ssp"
@@ -214,7 +214,7 @@
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:background="@android:color/transparent"
                         android:fontFamily="@font/poppins_bold"
-                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        app:srcCompat="@drawable/ic_baseline_calendar_month_24"
                         android:text="View Timetable"
                         android:textColor="#50000000"
                         android:textSize="@dimen/_11ssp"
@@ -286,7 +286,7 @@
                                                 android:layout_width="@dimen/_170sdp"
                                                 android:layout_height="@dimen/_200sdp"
                                                 android:scaleType="centerCrop"
-                                                android:src="@drawable/chapter_mask"
+                                                app:srcCompat="@drawable/chapter_mask"
                                                 app:layout_constraintBottom_toBottomOf="parent"
                                                 app:layout_constraintEnd_toEndOf="parent"
                                                 app:layout_constraintStart_toStartOf="parent"
@@ -376,7 +376,7 @@
                                                 android:layout_width="@dimen/_170sdp"
                                                 android:layout_height="@dimen/_200sdp"
                                                 android:scaleType="centerCrop"
-                                                android:src="@drawable/chapter_mask"
+                                                app:srcCompat="@drawable/chapter_mask"
                                                 app:layout_constraintBottom_toBottomOf="parent"
                                                 app:layout_constraintEnd_toEndOf="parent"
                                                 app:layout_constraintStart_toStartOf="parent"
@@ -477,7 +477,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_330sdp"
-                        android:src="@drawable/teachers_calender_back_img" />
+                        app:srcCompat="@drawable/teachers_calender_back_img" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

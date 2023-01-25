@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/performance_top_background"
+        app:srcCompat="@drawable/performance_top_background"
         android:scaleType="fitXY"/>
 
     <ImageView
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="@id/top_background"
         app:layout_constraintBottom_toBottomOf="@id/top_background"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/performance_top_image"
+        app:srcCompat="@drawable/performance_top_image"
         android:layout_gravity="end|bottom"
         android:layout_marginEnd="@dimen/_10sdp"
         />

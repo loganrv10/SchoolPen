@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_10sdp"
         android:background="@android:color/transparent"
-        android:src="@drawable/ic_baseline_calendar_month_24"
+        app:srcCompat="@drawable/ic_baseline_calendar_month_24"
         android:textColor="#50000000"
         android:textSize="@dimen/_11ssp"
         android:elevation="10dp"

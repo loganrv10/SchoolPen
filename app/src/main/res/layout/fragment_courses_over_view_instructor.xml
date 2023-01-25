@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/text_instructor_rating"
-      android:src="@drawable/instructor_rating"
+      app:srcCompat="@drawable/instructor_rating"
       android:layout_marginLeft="@dimen/_10sdp"
       android:layout_marginTop="@dimen/_10sdp"
       />
