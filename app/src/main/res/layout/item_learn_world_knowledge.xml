@@ -50,7 +50,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_more_vert_20"
+                    app:srcCompat="@drawable/ic_baseline_more_vert_20"
                     android:background="@android:color/transparent"
                     android:layout_gravity="end|center_vertical"
                     app:tint="#707070" />

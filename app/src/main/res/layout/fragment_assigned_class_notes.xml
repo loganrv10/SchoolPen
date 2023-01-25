@@ -52,7 +52,7 @@
         android:id="@+id/notes_send_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_send_24"
+        app:srcCompat="@drawable/ic_baseline_send_24"
         android:layout_marginStart="@dimen/_10sdp"
         android:background="@drawable/circle_back"
         android:backgroundTint="@color/teachers_ui"

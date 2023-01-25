@@ -51,7 +51,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:background="@android:color/transparent"
             android:padding="@dimen/_4sdp"
-            android:src="@drawable/ic_baseline_call_24"
+            app:srcCompat="@drawable/ic_baseline_call_24"
             app:tint="@color/teachers_ui" />
 
         <ImageButton
@@ -61,6 +61,6 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:background="@android:color/transparent"
             android:padding="@dimen/_4sdp"
-            android:src="@drawable/ic_baseline_chat_bubble_24"
+            app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
             app:tint="@color/teachers_ui" />
     </LinearLayout>

@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/parent_top_back" />
+                app:srcCompat="@drawable/parent_top_back" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:background="@drawable/circle_back"
-                        android:src="@drawable/ic_baseline_add_24"
+                        app:srcCompat="@drawable/ic_baseline_add_24"
                         android:padding="@dimen/_5sdp"
                         app:tint="@color/parent_ui"
                         android:layout_marginBottom="@dimen/_8sdp"
@@ -222,7 +222,7 @@
                         android:layout_marginStart="@dimen/_10sdp"
                         android:fontFamily="@font/poppins_bold"
                         android:background="@android:color/transparent"
-                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        app:srcCompat="@drawable/ic_baseline_calendar_month_24"
                         android:layout_marginEnd="@dimen/_10sdp"
                         app:tint="@color/parent_ui" />
                 </FrameLayout>
@@ -312,7 +312,7 @@
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:background="@android:color/transparent"
                         android:padding="@dimen/_4sdp"
-                        android:src="@drawable/ic_baseline_call_24"
+                        app:srcCompat="@drawable/ic_baseline_call_24"
                         app:tint="@color/parent_light" />
 
                     <ImageButton
@@ -322,7 +322,7 @@
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:background="@android:color/transparent"
                         android:padding="@dimen/_4sdp"
-                        android:src="@drawable/ic_baseline_chat_bubble_24"
+                        app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
                         app:tint="@color/parent_light" />
                 </LinearLayout>
 
@@ -617,7 +617,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_beach"
+                            app:srcCompat="@drawable/ic_baseline_beach"
                             android:backgroundTint="@android:color/transparent"/>
 
                         <TextView
@@ -644,7 +644,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_attendance"
+                            app:srcCompat="@drawable/ic_baseline_attendance"
                             android:backgroundTint="@android:color/transparent"/>
 
                         <TextView
@@ -680,7 +680,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_pin_20"
+                            app:srcCompat="@drawable/ic_baseline_pin_20"
                             android:backgroundTint="@android:color/transparent"/>
 
                         <TextView
@@ -707,7 +707,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_calendar_month_24"
+                            app:srcCompat="@drawable/ic_baseline_calendar_month_24"
                             android:backgroundTint="@android:color/transparent"/>
 
                         <TextView
@@ -743,7 +743,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_fee"
+                            app:srcCompat="@drawable/ic_baseline_fee"
                             android:backgroundTint="@android:color/transparent"
                             app:tint="#383838" />
 
@@ -771,7 +771,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_baseline_hat"
+                            app:srcCompat="@drawable/ic_baseline_hat"
                             android:backgroundTint="@android:color/transparent"/>
 
                         <TextView
@@ -815,7 +815,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
             android:backgroundTint="@android:color/transparent"
-            android:src="@drawable/ic_round_menu_24" />
+            app:srcCompat="@drawable/ic_round_menu_24" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -829,7 +829,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/circle_back"
                 android:padding="@dimen/_5sdp"
-                android:src="@drawable/ic_chat_icon"
+                app:srcCompat="@drawable/ic_chat_icon"
                 app:tint="@color/parent_ui" />
 
             <ImageButton
@@ -838,7 +838,7 @@
                 android:layout_marginStart="@dimen/_6sdp"
                 android:background="@drawable/circle_back"
                 android:padding="@dimen/_5sdp"
-                android:src="@drawable/ic_baseline_notifications_24"
+                app:srcCompat="@drawable/ic_baseline_notifications_24"
                 app:tint="@color/parent_ui" />
             <ImageButton
                 android:id="@+id/btnLogout"
@@ -847,7 +847,7 @@
                 android:layout_marginStart="@dimen/_6sdp"
                 android:background="@drawable/circle_back"
                 android:padding="@dimen/_7sdp"
-                android:src="@drawable/ic_baseline_logout_20"
+                app:srcCompat="@drawable/ic_baseline_logout_20"
                 app:tint="@color/parent_ui" />
 
             <de.hdodenhof.circleimageview.CircleImageView

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_backback_button"
+        app:srcCompat="@drawable/ic_backback_button"
         android:background="@null"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_10sdp"/>

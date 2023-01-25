@@ -24,7 +24,7 @@
                 android:layout_margin="@dimen/_10sdp"
                 android:background="@android:color/transparent"
                 android:padding="@dimen/_5sdp"
-                android:src="@drawable/ic_baseline_close_24"
+                app:srcCompat="@drawable/ic_baseline_close_24"
                 app:tint="@color/color_primary" />
 
             <TextView
@@ -300,25 +300,25 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_image_24"
+                app:srcCompat="@drawable/ic_baseline_image_24"
                 android:backgroundTint="@android:color/transparent"
                 app:tint="@color/color_primary" />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_videocam_24"
+                app:srcCompat="@drawable/ic_baseline_videocam_24"
                 android:backgroundTint="@android:color/transparent"
                 app:tint="@color/color_primary" />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_insert_chart_24"
+                app:srcCompat="@drawable/ic_baseline_insert_chart_24"
                 android:backgroundTint="@android:color/transparent"
                 app:tint="@color/color_primary" />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_more_vert_24"
+                app:srcCompat="@drawable/ic_baseline_more_vert_24"
                 android:backgroundTint="@android:color/transparent"
                 app:tint="@color/color_primary" />
 

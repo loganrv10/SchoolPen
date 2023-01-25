@@ -28,7 +28,7 @@
                 android:paddingTop="@dimen/_5sdp"
                 android:paddingEnd="@dimen/_6sdp"
                 android:paddingBottom="@dimen/_5sdp"
-                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"
                 app:tint="#9163d7" />
 
             <TextView

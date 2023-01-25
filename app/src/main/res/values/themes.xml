@@ -3,8 +3,8 @@
     <style name="Base.Theme.SchoolPen" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:colorPrimary">@color/color_primary_lite</item>
-        <item name="android:colorPrimaryDark">@color/color_primary</item>
+        <item name="colorPrimary">@color/color_primary_lite</item>
+        <item name="colorPrimaryDark">@color/color_primary</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 
@@ -22,14 +22,14 @@
 
     <style name="tab_text">
 
-        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="fontFamily">@font/poppins_semi_bold</item>
         <item name="android:textSize">@dimen/_10ssp</item>
 
     </style>
 
     <style name="tab_text1">
 
-        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:textSize">@dimen/_11ssp</item>
 
     </style>
@@ -38,8 +38,8 @@
         <item name="colorControlActivated">#20A686</item>
         <item name="android:switchTextOn">P</item>
         <item name="android:switchTextOff">A</item>
-        <item name="android:switchTextAppearance">@style/switchTextStyle</item>
-        <item name="android:showText">true</item>
+        <item name="switchTextAppearance">@style/switchTextStyle</item>
+        <item name="showText">true</item>
         <!-- inactive thumb color -->
         <item name="colorSwitchThumbNormal">#D81159
         </item>
@@ -51,7 +51,7 @@
     <style name="switchTextStyle">
 
         <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="fontFamily">@font/poppins_bold</item>
         <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:textSize">@dimen/_10ssp</item>
 
@@ -69,7 +69,7 @@
     </style>
 
     <style name="calander_text">
-        <item name="android:fontFamily">@font/lato_semi_bold</item>
+        <item name="fontFamily">@font/lato_semi_bold</item>
         <item name="android:textSize">@dimen/_11ssp</item>
 
     </style>
@@ -168,9 +168,9 @@
     <style name="rb_regular_black_title" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
         <item name="android:textColor">@color/black_title_text</item>
-        <item name="android:background">@drawable/radion_button_bg_selector</item>
+        <item name="background">@drawable/radion_button_bg_selector</item>
         <item name="android:drawableRight">@drawable/radion_button_icon_selector</item>
         <item name="android:button">@null</item>
         <item name="android:padding">@dimen/_10sdp</item>
@@ -183,9 +183,9 @@
     <style name="chkbox_regular_black_title" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
         <item name="android:textColor">@color/black_title_text</item>
-        <item name="android:background">@drawable/radion_button_bg_selector</item>
+        <item name="background">@drawable/radion_button_bg_selector</item>
         <item name="android:drawableRight">@drawable/radion_button_icon_selector</item>
         <item name="android:button">@null</item>
         <item name="android:padding">@dimen/_10sdp</item>

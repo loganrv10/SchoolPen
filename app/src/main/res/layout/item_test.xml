@@ -25,7 +25,7 @@
                 android:layout_height="match_parent"
                 android:alpha="0.3"
                 android:scaleType="centerCrop"
-                android:src="@drawable/homework_back_design" />
+                app:srcCompat="@drawable/homework_back_design" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,5 +107,5 @@
         android:layout_gravity="end"
         android:layout_marginEnd="@dimen/_20sdp"
         android:scaleType="fitCenter"
-        android:src="@drawable/abc" />
+        app:srcCompat="@drawable/abc" />
 </FrameLayout>

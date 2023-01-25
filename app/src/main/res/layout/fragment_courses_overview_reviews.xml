@@ -52,7 +52,7 @@
                     android:id="@+id/rating_stars_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_stars_group_image"
+                    app:srcCompat="@drawable/ic_stars_group_image"
                     app:layout_constraintStart_toEndOf="@id/rating_points"
                     app:layout_constraintTop_toTopOf="@id/rating_points" />
 
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:background="@null"
             android:visibility="gone"
-            android:src="@drawable/ic_arrrow_icon" />
+            app:srcCompat="@drawable/ic_arrrow_icon" />
 
         <ImageView
             android:id="@+id/rating_stars_dummy_image"
@@ -87,7 +87,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_10sdp"
-            android:src="@drawable/ratigns_dummy_image"
+            app:srcCompat="@drawable/ratigns_dummy_image"
             app:layout_constraintEnd_toStartOf="@id/drop_down_button"
             app:layout_constraintTop_toBottomOf="@id/rating_total_students" />
 
@@ -167,7 +167,7 @@
                 android:id="@+id/rating_stars_image_student"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_stars_group_image"
+                app:srcCompat="@drawable/ic_stars_group_image"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/dpImage" />
 

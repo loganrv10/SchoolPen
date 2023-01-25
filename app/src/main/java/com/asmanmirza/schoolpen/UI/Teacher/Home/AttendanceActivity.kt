@@ -1,13 +1,14 @@
 package com.asmanmirza.schoolpen.UI.Teacher.Home
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asmanmirza.schoolpen.Adapters.AdapterAttendance
+import com.asmanmirza.schoolpen.Helpers.ItemClickSupport
 import com.asmanmirza.schoolpen.Models.ModelAttendance
 import com.asmanmirza.schoolpen.databinding.ActivityAttendanceBinding
+
 class AttendanceActivity : AppCompatActivity() {
 
     lateinit var binding:ActivityAttendanceBinding
@@ -34,10 +35,15 @@ class AttendanceActivity : AppCompatActivity() {
                 finish()
             }
             nextButton.setOnClickListener {
-                Toast.makeText(this@AttendanceActivity, "You cannot visit this section", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@AttendanceActivity, TeacherReadingActivity::class.java)
+                startActivity(intent)
             }
             recAttendance.layoutManager = LinearLayoutManager(this@AttendanceActivity, LinearLayoutManager.VERTICAL, false)
             getStudents()
+
+            ItemClickSupport.addTo(recAttendance).setOnItemClickListener { recyclerView, position, v ->
+                startActivity(Intent(this@AttendanceActivity, TeacherStudentProfileActivity::class.java))
+            }
         }
 
     }

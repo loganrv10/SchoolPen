@@ -25,7 +25,7 @@
                 android:paddingTop="@dimen/_5sdp"
                 android:paddingEnd="@dimen/_6sdp"
                 android:paddingBottom="@dimen/_5sdp"
-                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"
                 app:tint="#9163D7" />
 
             <TextView
@@ -283,7 +283,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ac_height"
+                        app:srcCompat="@drawable/ac_height"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -349,7 +349,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/grade_card_design_small"/>
+                                app:srcCompat="@drawable/grade_card_design_small"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -408,7 +408,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/grade_card_design_small"/>
+                                app:srcCompat="@drawable/grade_card_design_small"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -477,7 +477,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/grade_card_design_small"/>
+                                app:srcCompat="@drawable/grade_card_design_small"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -536,7 +536,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/grade_card_design_small"/>
+                                app:srcCompat="@drawable/grade_card_design_small"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -606,7 +606,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/grade_card_design_small"/>
+                                app:srcCompat="@drawable/grade_card_design_small"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -665,7 +665,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/grade_card_design_small"/>
+                                app:srcCompat="@drawable/grade_card_design_small"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
