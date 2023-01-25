@@ -234,7 +234,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp"
         app:layout_constraintTop_toBottomOf="@id/remarks_text"
-        android:background="@drawable/rounded_remark_background"
+        android:background="@drawable/rounded_invite_background"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginVertical="@dimen/_10sdp"
         android:paddingStart="@dimen/_10sdp"

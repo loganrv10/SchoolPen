@@ -41,4 +41,9 @@ class ActivityFeePortal : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
+    override fun onBackPressed() {
+        finish()
+        super.getOnBackPressedDispatcher().onBackPressed()
+    }
 }

@@ -25,6 +25,7 @@ import com.asmanmirza.schoolpen.Models.ModelEvents
 import com.asmanmirza.schoolpen.UI.Student.Home.CalanderActivity
 import com.asmanmirza.schoolpen.Models.ModelLiveClasses
 import com.asmanmirza.schoolpen.UI.Student.Fee.ActivityFeePortal
+import com.asmanmirza.schoolpen.UI.Student.Fee.ActivityStudentProfile
 import com.asmanmirza.schoolpen.UI.Student.Home.LiveClassesActivity
 import com.asmanmirza.schoolpen.UI.Student.Home.NoticeActivity
 import com.google.android.material.tabs.TabLayout
@@ -105,6 +106,10 @@ class HomeFragment : Fragment() {
 
             ivAlert.setOnClickListener {
                 startActivity(Intent(requireContext(), ActivityFeePortal::class.java))
+            }
+
+            ivMessage.setOnClickListener {
+                startActivity(Intent(requireContext(), ActivityStudentProfile::class.java))
             }
 
             btnOpenCalendar.setOnClickListener {
