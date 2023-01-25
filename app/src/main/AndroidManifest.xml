@@ -61,6 +61,13 @@
         </activity>
         <activity
             android:name=".UI.Teacher.Home.TeacherStudentProfileActivity"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".UI.Student.Classwork.grades.SubjectTPerformanceStatusActivity"
             android:screenOrientation="portrait"
             android:exported="false">
@@ -117,14 +124,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".UI.Student.assignment.ZoomImageAct"
-            android:screenOrientation="portrait"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".UI.Student.assignment.ZoomImageAct"
             android:exported="false"
