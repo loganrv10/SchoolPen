@@ -176,7 +176,9 @@
                             android:textColor="#383838"
                             android:textSize="@dimen/_14ssp" />
 
-                        <include layout="@layout/item_resume_homework" />
+                        <include
+                            android:id="@+id/resumeHw"
+                            layout="@layout/item_resume_homework" />
 
                         <TextView
                             android:layout_width="wrap_content"
