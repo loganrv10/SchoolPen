@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -29,6 +28,7 @@ import com.asmanmirza.schoolpen.UI.Student.Home.CalanderActivity
 import com.asmanmirza.schoolpen.UI.Student.Home.LiveClassesActivity
 import com.asmanmirza.schoolpen.UI.Student.Home.NoticeActivity
 import com.asmanmirza.schoolpen.UI.Student.StudentHome
+import com.asmanmirza.schoolpen.UI.Student.chat.StudentChatHomeActivity
 import com.asmanmirza.schoolpen.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
@@ -115,7 +115,7 @@ class HomeFragment : Fragment() {
             }
 
             ivMessage.setOnClickListener {
-                startActivity(Intent(requireContext(), ActivityStudentProfile::class.java))
+                startActivity(Intent(requireContext(), StudentChatHomeActivity::class.java))
             }
 
             btnOpenCalendar.setOnClickListener {
