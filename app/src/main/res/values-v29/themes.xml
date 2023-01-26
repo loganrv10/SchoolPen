@@ -45,6 +45,12 @@
         <item name="android:textColor">@color/black_title_text</item>
     </style>
 
+
+    <style name="tv_poppins_bold_light_gray" parent="tv_poppins_bold">
+        <item name="android:textColor">@color/lite_grey</item>
+    </style>
+
+
     <style name="tv_poppins_semi_bold_light_gray" parent="tv_poppins_semi_bold">
         <item name="android:textColor">@color/lite_grey</item>
     </style>

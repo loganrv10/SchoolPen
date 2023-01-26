@@ -7,13 +7,13 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.asmanmirza.schoolpen.UI.Student.StudentHome
-import com.asmanmirza.schoolpen.UI.Teacher.TeachersHome
-import com.asmanmirza.schoolpen.databinding.ActivityLoginBinding
 import com.asmanmirza.schoolpen.Helpers.ApiClient
 import com.asmanmirza.schoolpen.Helpers.ApiInterface
 import com.asmanmirza.schoolpen.Helpers.TinyDB
 import com.asmanmirza.schoolpen.UI.Parent.ParentHomeActivity
+import com.asmanmirza.schoolpen.UI.Student.StudentHome
+import com.asmanmirza.schoolpen.UI.Teacher.TeachersHome
+import com.asmanmirza.schoolpen.databinding.ActivityLoginBinding
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import org.json.JSONObject

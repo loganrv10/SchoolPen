@@ -189,4 +189,8 @@ more unicellular organisms?
 Every multi-cellular organism has come
 from a single cell. How? Cells divide to
 produce cells of their own kin</string>
+
+    <string name="shapes_text">Shapes are all around and can take many different forms. As previously mentioned, shapes can be 2-D or 3-D. Shapes that are 2-D fall under the category of plane geometry, while 3-D shapes are a type of geometry known as spatial geometry. Read more about these categories of geometry below and see how they can not only be found in manmade objects but the natural world as well</string>
+    <string name="reading_demo_text">Geometry is used in various daily life applications such as art, architecture, engineering, robotics, astronomy, sculptures, space, nature, sports, machines, cars, and much more. Some of such applications used in daily life are mentioned below: Nature: One of the best examples of geometry in daily life is nature.
+Math can be applied to almost everything in the real world. Some of it can be quite obvious, like counting fruit or adding and subtracting money. However, math also appears in less obvious ways, such as in shapes. This type of math is called geometry, and it deals primarily with lines, angles, and shapes. There are many different types of shapes out there. What is an example of a geometric shape? Common geometric shapes include circles, squares, rectangles, hexagons, stars, and triangles. These shapes can even be put together to create patterns.</string>
 </resources>

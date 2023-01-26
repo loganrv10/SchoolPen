@@ -63,23 +63,23 @@ class StudentHome : BaseActivity(), View.OnClickListener {
                     when(tab?.position){
                         0->{
                             viewPager.currentItem = 0
-                            hideTopButtons(false)
+//                            hideTopButtons(false)
                         }
                         1->{
                             viewPager.currentItem = 1
-                            hideTopButtons(true)
+//                            hideTopButtons(true)
                         }
                         2->{
                             viewPager.currentItem = 2
-                            hideTopButtons(true)
+//                            hideTopButtons(true)
                         }
                         3->{
                             viewPager.currentItem = 3
-                            hideTopButtons(true)
+//                            hideTopButtons(true)
                         }
                         4->{
                             viewPager.currentItem = 4
-                            hideTopButtons(false)
+//                            hideTopButtons(false)
                         }
                     }
                 }
@@ -100,14 +100,14 @@ class StudentHome : BaseActivity(), View.OnClickListener {
         window.statusBarColor = Color.parseColor(color)
     }
 
-    fun hideTopButtons(hide:Boolean){
+    /*fun hideTopButtons(hide:Boolean){
         if(hide) {
             binding.ivMenu.visibility = View.GONE
         }else{
             binding.ivMenu.visibility = View.VISIBLE
         }
 
-    }
+    }*/
 
     private fun showDrawer() {
 
@@ -184,12 +184,17 @@ class StudentHome : BaseActivity(), View.OnClickListener {
         wm.updateViewLayout(container, p)
     }
 
+    fun openDrawer(){
+
+        binding.drawerLayout.openDrawer(GravityCompat.START)
+    }
+
     override fun onClick(p0: View?) {
 
         when (p0) {
 
             binding.ivMenu -> {
-                binding.drawerLayout.openDrawer(GravityCompat.START)
+                openDrawer()
             }
 
             binding.drawerMenu.tvTeachersStudentHomeAct -> {

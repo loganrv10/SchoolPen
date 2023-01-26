@@ -7,27 +7,29 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.asmanmirza.schoolpen.R
-import com.asmanmirza.schoolpen.databinding.FragmentHomeBinding
-import com.asmanmirza.schoolpen.Helpers.TinyDB
-import com.asmanmirza.schoolpen.Helpers.ZoomOutPageTransformer
 import com.asmanmirza.schoolpen.Adapters.AdapterEvents
 import com.asmanmirza.schoolpen.Adapters.AdapterHomeDates
 import com.asmanmirza.schoolpen.Adapters.AdapterHomeLiveClasses
 import com.asmanmirza.schoolpen.Adapters.AdapterHomeTodaysClasses
+import com.asmanmirza.schoolpen.Helpers.TinyDB
+import com.asmanmirza.schoolpen.Helpers.ZoomOutPageTransformer
 import com.asmanmirza.schoolpen.Models.ModelClasses
 import com.asmanmirza.schoolpen.Models.ModelDates
 import com.asmanmirza.schoolpen.Models.ModelEvents
-import com.asmanmirza.schoolpen.UI.Student.Home.CalanderActivity
 import com.asmanmirza.schoolpen.Models.ModelLiveClasses
+import com.asmanmirza.schoolpen.R
 import com.asmanmirza.schoolpen.UI.Student.Fee.ActivityFeePortal
 import com.asmanmirza.schoolpen.UI.Student.Fee.ActivityStudentProfile
+import com.asmanmirza.schoolpen.UI.Student.Home.CalanderActivity
 import com.asmanmirza.schoolpen.UI.Student.Home.LiveClassesActivity
 import com.asmanmirza.schoolpen.UI.Student.Home.NoticeActivity
+import com.asmanmirza.schoolpen.UI.Student.StudentHome
+import com.asmanmirza.schoolpen.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -106,6 +108,10 @@ class HomeFragment : Fragment() {
 
             ivAlert.setOnClickListener {
                 startActivity(Intent(requireContext(), ActivityFeePortal::class.java))
+            }
+
+            ivMenu.setOnClickListener {
+                (activity as StudentHome?)?.openDrawer()
             }
 
             ivMessage.setOnClickListener {

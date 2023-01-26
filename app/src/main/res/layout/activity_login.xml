@@ -134,19 +134,13 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <ImageButton
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_back"
-        android:paddingStart="@dimen/_5sdp"
-        android:paddingTop="@dimen/_5sdp"
-        android:paddingEnd="@dimen/_6sdp"
-        android:paddingBottom="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_marginStart="@dimen/_15sdp"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"
-        app:tint="#9163d7" />
+        app:srcCompat="@drawable/ic_back_purple"  />
 
 
     <TextView

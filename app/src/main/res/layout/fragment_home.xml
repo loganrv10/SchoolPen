@@ -51,7 +51,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="@dimen/_50sdp">
+                android:paddingTop="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_round_menu_24" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -109,7 +118,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <ImageButton
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="@dimen/_8sdp"
@@ -124,7 +133,7 @@
                                 app:srcCompat="@drawable/ic_baseline_search_24"
                                 app:tint="@color/color_primary" />
 
-                            <ImageButton
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/ivMessage"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -139,7 +148,7 @@
                                 app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
                                 app:tint="@color/color_primary" />
 
-                            <ImageButton
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/ivAlert"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -230,7 +239,7 @@
                         android:textColor="#383838"
                         android:textSize="@dimen/_12ssp" />
 
-                    <ImageButton
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center_vertical"
@@ -285,7 +294,7 @@
                         android:text="Tomorrow&apos;s Classes"
                         android:textSize="@dimen/_12ssp" />
 
-                    <ImageButton
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center_vertical"
