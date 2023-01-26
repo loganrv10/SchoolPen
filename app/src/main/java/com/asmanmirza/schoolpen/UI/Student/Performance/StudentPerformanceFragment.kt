@@ -34,9 +34,18 @@ class StudentPerformanceFragment : Fragment() {
 
             tabs.addOnTabSelectedListener(object:OnTabSelectedListener{
                 override fun onTabSelected(tab: TabLayout.Tab?) {
-                    if(tab?.position != 0){
-                        tabs.selectTab(tabs.getTabAt(0))
-                        Toast.makeText(requireContext(), "You currently can't access the other tabs except 1st one.", Toast.LENGTH_LONG).show()
+//                    if(tab?.position != 0){
+//                        tabs.selectTab(tabs.getTabAt(0))
+//                        Toast.makeText(requireContext(), "You currently can't access the other tabs except 1st one.", Toast.LENGTH_LONG).show()
+//                    }
+
+                    when (tab?.position) {
+                        0 -> {
+                            viewPagerContainer.currentItem = 0
+                        }
+                        1 -> {
+                            viewPagerContainer.currentItem = 1
+                        }
                     }
                 }
 

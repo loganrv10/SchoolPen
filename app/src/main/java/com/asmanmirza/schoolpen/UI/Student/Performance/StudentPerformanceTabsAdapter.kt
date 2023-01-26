@@ -10,6 +10,7 @@ import com.asmanmirza.schoolpen.UI.Student.Fragments.CoursesFragment
 import com.asmanmirza.schoolpen.UI.Student.Fragments.HomeFragment
 import com.asmanmirza.schoolpen.UI.Student.Fragments.LearningFragment
 import com.asmanmirza.schoolpen.UI.Student.Performance.tabs.PerformanceAcademicFragment
+import com.asmanmirza.schoolpen.UI.Student.Performance.tabs.PerformanceConceptualFragmnet
 
 class StudentPerformanceTabsAdapter(private val fm: FragmentManager,private val tabs: Int) : FragmentPagerAdapter(fm, tabs)  {
     override fun getCount(): Int {
@@ -19,7 +20,10 @@ class StudentPerformanceTabsAdapter(private val fm: FragmentManager,private val 
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0->{
-                PerformanceAcademicFragment()
+                PerformanceConceptualFragmnet()
+            }
+            1->{
+                PerformanceConceptualFragmnet()
             }
             else -> {
                 PerformanceAcademicFragment()

@@ -16,7 +16,7 @@
                 android:id="@+id/tvSubject"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:text="Subjects"
@@ -299,22 +299,31 @@
                 android:layout_marginTop="@dimen/_11sdp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:text="All Subject Conceptual Learning graph"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/llSubject" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ivGraph"
+            <!--            <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                android:id="@+id/ivGraph"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_160sdp"-->
+            <!--                android:layout_marginHorizontal="@dimen/_15sdp"-->
+            <!--                android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                android:layout_marginBottom="@dimen/_30sdp"-->
+            <!--                android:background="@drawable/back_15sdp"-->
+            <!--                android:backgroundTint="#20AAAAAA"-->
+            <!--                android:paddingTop="@dimen/_5sdp"-->
+            <!--                android:paddingBottom="@dimen/_5sdp"-->
+            <!--                android:src="@drawable/cummulative_chart"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/subject_graph_title" />-->
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_160sdp"
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_30sdp"
-                android:background="@drawable/back_15sdp"
-                android:backgroundTint="#20AAAAAA"
-                android:paddingTop="@dimen/_5sdp"
-                android:paddingBottom="@dimen/_5sdp"
-                android:src="@drawable/cummulative_chart"
                 app:layout_constraintTop_toBottomOf="@id/subject_graph_title" />
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -322,7 +331,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ivGraph"
+                app:layout_constraintTop_toBottomOf="@id/barChart"
                 app:srcCompat="@drawable/bulb_image" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -366,7 +375,7 @@
                 android:fontFamily="@font/lato_semi_bold"
                 android:text="Performence prediction"
                 android:textColor="#383838"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvEnglish" />
 
@@ -566,7 +575,7 @@
                 android:fontFamily="@font/lato_semi_bold"
                 android:text="AI Recommedations"
                 android:textColor="#383838"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ivSeek" />
 
@@ -656,7 +665,7 @@
                 android:fontFamily="@font/poppins_semi_bold"
                 android:text="Performace in types of question"
                 android:textColor="#383838"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/stats" />
 
@@ -715,7 +724,7 @@
                 android:fontFamily="@font/lato_semi_bold"
                 android:text="Performace in types of question"
                 android:textColor="#383838"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tabQuestion" />
 
@@ -748,14 +757,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/ivGraphQuestion"
+                    <!--                    <androidx.appcompat.widget.AppCompatImageView-->
+                    <!--                        android:id="@+id/ivGraphQuestion"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginHorizontal="@dimen/_35sdp"-->
+                    <!--                        android:layout_marginTop="@dimen/_20sdp"-->
+                    <!--                        android:scaleType="fitStart"-->
+                    <!--                        android:src="@drawable/graph_performance"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/lineChart"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/_35sdp"
-                        android:layout_marginTop="@dimen/_20sdp"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/graph_performance"
+                        android:layout_height="@dimen/_120sdp"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -769,7 +785,7 @@
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/ivGraphQuestion" />
+                        app:layout_constraintTop_toBottomOf="@id/lineChart" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvQuestonAttemped"
@@ -910,7 +926,7 @@
                 android:fontFamily="@font/lato_semi_bold"
                 android:text="Accuracy"
                 android:textColor="#383838"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cvPerfomanceContainer" />
 
@@ -983,13 +999,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_24sdp"
                         android:fontFamily="@font/lato_regular"
                         android:text="Correct answers : "
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:layout_marginBottom="@dimen/_24sdp"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tvQuestonAttempedAccuracy" />
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -1031,8 +1047,393 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/lato_semi_bold"
+                android:text="Time analysis"
+                android:textColor="#383838"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvAccuracyContainer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitleAnalysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Time taken to attempt each questions"
+                android:textColor="#383838"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleTime" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTimeAnalysisContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardBackgroundColor="#EBE4F5"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitleAnalysis">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTimeGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/time_graph"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTotalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Total Test time : "
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivTimeGraph" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTimeTaken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Time taken : "
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTotalTime" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAvgTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_24sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Average time/ question : "
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTimeTaken" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTotalTimeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="30 min"
+                        android:textColor="#383838"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvTotalTime"
+                        app:layout_constraintStart_toEndOf="@id/tvTotalTime" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTimeTakenValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="22 min"
+                        android:textColor="#383838"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvTimeTaken"
+                        app:layout_constraintStart_toEndOf="@id/tvTimeTaken" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAvgTimeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="1 min"
+                        android:textColor="#383838"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvAvgTime"
+                        app:layout_constraintStart_toEndOf="@id/tvAvgTime" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitleSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/lato_semi_bold"
+                android:text="Time analysis"
+                android:textColor="#383838"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvTimeAnalysisContainer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitleSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Time taken to attempt each questions"
+                android:textColor="#383838"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleSpeed" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSpeedContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardBackgroundColor="#EBE4F5"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitleSpeed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSpeedGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/group_speed_graph"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTotalQuestionAttemptedSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Total question attempted"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_7ssp"
+                        app:layout_constraintStart_toStartOf="@+id/tvTotalQuestionAttemptedSpeedValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvTotalQuestionAttemptedSpeedValue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTimeTakenSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Time taken"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_7ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvTimeTakenSpeedValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvTimeTakenSpeedValue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTotalQuestionAttemptedSpeedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="580"
+                        android:textColor="#383838"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivSpeedGraph" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTimeTakenSpeedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="22 min"
+                        android:textColor="#383838"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="@id/tvTotalQuestionAttemptedSpeed"
+                        app:layout_constraintTop_toBottomOf="@id/tvTotalQuestionAttemptedSpeed" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:text="1 m/ques"
+                        android:textSize="@dimen/_20sdp"
+                        app:fontFamily="@font/lato_bold"
+                        app:layout_constraintBottom_toTopOf="@id/tvSpeedAvgTime"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSpeedAvgTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Average time/ question"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_7ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitlePractiseTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/lato_semi_bold"
+                android:text="Performance in practise Test"
+                android:textColor="#383838"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvSpeedContainer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitlePractiseTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Shows overall test results"
+                android:textColor="#383838"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitlePractiseTest" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPractiseContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_240sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardBackgroundColor="#EBE4F5"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtitlePractiseTest">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    app:srcCompat="@drawable/test_result" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitleSuggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/lato_semi_bold"
+                android:text="Suggestions"
+                android:textColor="#383838"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvPractiseContainer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitleSuggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Personalised suggestions based on your report"
+                android:textColor="#383838"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleSuggestion" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                app:layout_constraintStart_toStartOf="@id/tvSubtitleSuggestion"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitleSuggestion"
+                app:srcCompat="@drawable/vector_dot_stu" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:text="Your test performance needs more effort and hardwork"
+                android:textColor="#383838"
+                android:textSize="@dimen/_14sdp"
+                app:fontFamily="@font/lato_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivDot"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitleSuggestion" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDott"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                app:layout_constraintStart_toStartOf="@id/ivDot"
+                app:layout_constraintTop_toTopOf="@id/tvDesPractise"
+                app:srcCompat="@drawable/vector_dot_stu" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDesPractise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="Practise all type of questios to improve conceptual understanding and accuracy while answering. "
+                android:textColor="#383838"
+                android:textSize="@dimen/_14sdp"
+                app:fontFamily="@font/lato_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivDot"
+                app:layout_constraintTop_toBottomOf="@id/ivDot" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
