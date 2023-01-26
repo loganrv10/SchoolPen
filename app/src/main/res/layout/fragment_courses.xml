@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
+    android:background="@color/white"
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
@@ -78,7 +79,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/scroll_dots"
+                    app:srcCompat="@drawable/scroll_dots"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/_5sdp"/>
 
@@ -319,7 +320,7 @@
         android:id="@+id/floatingSearchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_search_24"
+        app:srcCompat="@drawable/ic_baseline_search_24"
         android:background="@drawable/circle_back"
         android:backgroundTint="@color/color_primary"
         android:padding="@dimen/_8sdp"

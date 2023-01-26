@@ -21,6 +21,7 @@ import com.asmanmirza.schoolpen.UI.Student.Classwork.details.HomeWorkDetailActiv
 import com.asmanmirza.schoolpen.UI.Student.Classwork.details.TestDetailActivity
 import com.asmanmirza.schoolpen.UI.Student.Classwork.grades.CumulativeGradeActivity
 import com.asmanmirza.schoolpen.UI.Student.Classwork.grades.TodaysGradeActivity
+import com.asmanmirza.schoolpen.UI.Student.assignment.AssignmentHomeAct
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 
@@ -86,6 +87,9 @@ class ClassworkFragment : Fragment() {
                 startActivity(Intent(requireContext(), TestDetailActivity::class.java))
             }
 
+            binding.resumeHw.flResumeHomeWork.setOnClickListener {
+                AssignmentHomeAct.startActivity(requireActivity())
+            }
 
         }
     }

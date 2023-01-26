@@ -13,7 +13,10 @@ import android.widget.LinearLayout
 import android.widget.PopupWindow
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
 import com.asmanmirza.schoolpen.Adapters.PageAdapterStudents
+import com.asmanmirza.schoolpen.BaseActivity
 import com.asmanmirza.schoolpen.R
 import com.asmanmirza.schoolpen.databinding.ActivityStudentHomeBinding
 import com.asmanmirza.schoolpen.Helpers.TinyDB
@@ -21,21 +24,33 @@ import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class StudentHome : AppCompatActivity() {
+class StudentHome : BaseActivity(), View.OnClickListener {
 
     lateinit var binding:ActivityStudentHomeBinding
+    private val scaleFactor = 5f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStudentHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         updateData()
+
     }
 
     @SuppressLint("ClickableViewAccessibility")
     fun updateData(){
 
         binding.apply {
+
+            binding.ivMenu.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvTeachersStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvClassmateStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvSyllabusStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvAttendanceStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvCalendarStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvSchoolBoardStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.tvFeePortalStudentHomeAct.setOnClickListener(this@StudentHome)
+            binding.drawerMenu.btnExitStudentHomeAct.setOnClickListener(this@StudentHome)
 
             viewPager.adapter = PageAdapterStudents(supportFragmentManager, bottomNavBar.tabCount)
             viewPager.setSwipePagingEnabled(false)
@@ -75,13 +90,8 @@ class StudentHome : AppCompatActivity() {
 
                 }
             })
-
-            ivMenu.setOnClickListener {
-                showDrawer()
-            }
-
         }
-
+        showDrawer()
     }
 
     fun updateStatusBarColor(color: String?) { // Color must be in hexadecimal fromat
@@ -99,9 +109,36 @@ class StudentHome : AppCompatActivity() {
 
     }
 
-    @SuppressLint("MissingInflatedId")
     private fun showDrawer() {
-        val popup = PopupWindow(this)
+
+        binding.drawerLayout.setScrimColor(Color.TRANSPARENT)
+
+        val actionBarDrawerToggle = object : ActionBarDrawerToggle(this, binding.drawerLayout, R.string.open, R.string.close){
+
+            override fun onDrawerOpened(drawerView: View) {
+                super.onDrawerOpened(drawerView)
+                binding.cvMain.radius = 65f
+            }
+
+            override fun onDrawerClosed(drawerView: View) {
+                super.onDrawerClosed(drawerView)
+                binding.cvMain.radius = 0f
+            }
+
+
+            override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
+                super.onDrawerSlide(drawerView, slideOffset)
+                val slideX = drawerView.width * slideOffset
+                binding.cvMain.translationX = slideX
+
+                binding.cvMain.scaleX = 1 - (slideOffset / scaleFactor)
+                binding.cvMain.scaleY = 1 - (slideOffset / scaleFactor)
+            }
+        }
+        binding.drawerLayout.addDrawerListener(actionBarDrawerToggle)
+
+
+        /*val popup = PopupWindow(this)
         val layout: View = layoutInflater.inflate(R.layout.item_drawer_layout, null)
         popup.contentView = layout
         // Set content width and height
@@ -134,7 +171,7 @@ class StudentHome : AppCompatActivity() {
             binding.ivMenu, Gravity.BOTTOM, 0,
             0
         )
-        popup.dimBehind()
+        popup.dimBehind()*/
     }
 
     fun PopupWindow.dimBehind() {
@@ -146,5 +183,49 @@ class StudentHome : AppCompatActivity() {
         p.dimAmount = 0.3f
         wm.updateViewLayout(container, p)
     }
+
+    override fun onClick(p0: View?) {
+
+        when (p0) {
+
+            binding.ivMenu -> {
+                binding.drawerLayout.openDrawer(GravityCompat.START)
+            }
+
+            binding.drawerMenu.tvTeachersStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.tvClassmateStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.tvSyllabusStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.tvAttendanceStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.tvCalendarStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.tvSchoolBoardStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.tvFeePortalStudentHomeAct -> {
+                closeDrawer()
+            }
+            binding.drawerMenu.btnExitStudentHomeAct -> {
+                closeDrawer()
+                val db = TinyDB(this)
+                db.clear()
+                Toast.makeText(this, "Signed out successfully", Toast.LENGTH_SHORT).show()
+                finishAffinity()
+            }
+        }
+    }
+
+    private fun closeDrawer() {
+        binding.drawerLayout.close()
+    }
+
 
 }

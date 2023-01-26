@@ -31,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/groupteacher_leaves_mask"
+                    app:srcCompat="@drawable/groupteacher_leaves_mask"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +48,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    android:src="@drawable/divider_icon"/>
+                    app:srcCompat="@drawable/divider_icon"/>
 
 
 
@@ -87,7 +87,7 @@
                     android:layout_marginTop="@dimen/_6sdp"
                     android:scaleType="fitXY"
                     android:layout_marginLeft="@dimen/_30sdp"
-                    android:src="@drawable/ic_sick_leave"
+                    app:srcCompat="@drawable/ic_sick_leave"
                     app:layout_constraintEnd_toStartOf="@id/text_sick_leave"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/teachers_leaves_left_total" />
@@ -140,7 +140,7 @@
                     android:layout_marginTop="@dimen/_6sdp"
                     android:scaleType="fitXY"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:src="@drawable/ic_vacation_leave"
+                    app:srcCompat="@drawable/ic_vacation_leave"
                     app:layout_constraintEnd_toStartOf="@id/text_vacation_leave"
                     app:layout_constraintStart_toEndOf="@id/divider_icon"
                     app:layout_constraintTop_toBottomOf="@id/teachers_vacations_left_total" />

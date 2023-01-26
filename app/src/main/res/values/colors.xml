@@ -15,5 +15,15 @@
     <color name="homework_detail_tint">#44C2E1</color>
     <color name="tabs_color">#707070</color>
     <color name="parent_ui">#83D39D</color>
+    <color name="black_title_text">#383838</color>
+    <color name="pure_black">#000000</color>
     <color name="parent_light">#56E484</color>
+    <color name="dark_skyblue">#89F5FE</color>
+    <color name="light_sky_blue">#C4FAFF</color>
+    <color name="blue_chart">#165DFF</color>
+    <color name="dark_skyblue_chart">#14C9C9</color>
+    <color name="yellow_chart">#F7BA1E</color>
+    <color name="purple_chart">#722ED1</color>
+    <color name="light_blue_chart">#3491FA</color>
+    <color name="light_green_chart">#9FDB1D</color>
 </resources>

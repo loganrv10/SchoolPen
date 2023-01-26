@@ -44,6 +44,7 @@ class TeachersHome : AppCompatActivity() {
                             viewPager.currentItem = 2
                         }
                         3->{
+                            viewPager.currentItem = 3
                         }
                     }
                 }

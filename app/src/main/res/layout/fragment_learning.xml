@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
     <ImageView
@@ -31,7 +32,7 @@
                 android:id="@+id/top_explore_image"
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="@dimen/_70sdp"
-                android:src="@drawable/learn_back_designs"
+                app:srcCompat="@drawable/learn_back_designs"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_gravity="end"/>
 
@@ -126,7 +127,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/scroll_dots"
+                        app:srcCompat="@drawable/scroll_dots"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/_5sdp"/>
 
@@ -163,7 +164,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/scroll_dots"
+                        app:srcCompat="@drawable/scroll_dots"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/_5sdp"/>
 
@@ -188,7 +189,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bubbles"/>
+                        app:srcCompat="@drawable/bubbles"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -222,7 +223,7 @@
                                 <ImageView
                                     android:layout_width="@dimen/_24sdp"
                                     android:layout_height="@dimen/_30sdp"
-                                    android:src="@drawable/first_prize"/>
+                                    app:srcCompat="@drawable/first_prize"/>
 
                                 <FrameLayout
                                     android:layout_width="@dimen/_24sdp"
@@ -305,7 +306,7 @@
                         android:layout_height="@dimen/_90sdp"
                         android:layout_gravity="end"
                         android:layout_marginEnd="@dimen/_5sdp"
-                        android:src="@drawable/hurrey"/>
+                        app:srcCompat="@drawable/hurrey"/>
 
                 </FrameLayout>
 
@@ -359,7 +360,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:layout_gravity="bottom|end"
         android:visibility="gone"
-        android:src="@drawable/logo"/>
+        app:srcCompat="@drawable/logo"/>
 
     <ImageView
         android:id="@+id/floatingImage"
@@ -369,7 +370,7 @@
         android:visibility="gone"
         android:elevation="@dimen/_10sdp"
         android:layout_margin="@dimen/_10sdp"
-        android:src="@drawable/explore_image" />
+        app:srcCompat="@drawable/explore_image" />
 
 
 </FrameLayout>

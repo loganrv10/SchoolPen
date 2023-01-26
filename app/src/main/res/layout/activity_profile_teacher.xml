@@ -9,7 +9,7 @@
         android:id="@+id/backGround"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_240sdp"
-        android:src="@drawable/ic_teacher_profile_circle_background"
+        app:srcCompat="@drawable/ic_teacher_profile_circle_background"
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_backback_button"
+        app:srcCompat="@drawable/ic_backback_button"
         android:background="@null"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_10sdp"
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:src="@drawable/ic_baseline_mode_edit_24"
+        app:srcCompat="@drawable/ic_baseline_mode_edit_24"
         app:layout_constraintBottom_toBottomOf="@id/profile_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.789"
@@ -98,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:src="@drawable/ic_baseline_mode_edit_24"
+        app:srcCompat="@drawable/ic_baseline_mode_edit_24"
         app:layout_constraintStart_toStartOf="@id/edit_profile_name"
         app:layout_constraintTop_toTopOf="@id/personal_info_heading"
         app:tint="#707070" />
@@ -107,7 +107,7 @@
         android:id="@+id/address_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_location_pin_icon"
+        app:srcCompat="@drawable/ic_location_pin_icon"
         app:layout_constraintTop_toTopOf="@id/title_address"
         app:layout_constraintStart_toStartOf="@id/personal_info_heading"
         app:layout_constraintBottom_toBottomOf="@id/title_address"/>
@@ -140,7 +140,7 @@
         android:id="@+id/email_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_email_icon"
+        app:srcCompat="@drawable/ic_email_icon"
         app:layout_constraintTop_toTopOf="@id/title_email"
         app:layout_constraintStart_toStartOf="@id/personal_info_heading"
         app:layout_constraintBottom_toBottomOf="@id/title_email"/>
@@ -173,7 +173,7 @@
         android:id="@+id/dob_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_cake_icon"
+        app:srcCompat="@drawable/ic_cake_icon"
         app:layout_constraintTop_toTopOf="@id/title_dob"
         app:layout_constraintStart_toStartOf="@id/personal_info_heading"
         app:layout_constraintBottom_toBottomOf="@id/title_dob"/>
@@ -206,7 +206,7 @@
         android:id="@+id/contact_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_contact_icon"
+        app:srcCompat="@drawable/ic_contact_icon"
         app:layout_constraintTop_toTopOf="@id/title_contact"
         app:layout_constraintStart_toStartOf="@id/personal_info_heading"
         app:layout_constraintBottom_toBottomOf="@id/title_contact"/>

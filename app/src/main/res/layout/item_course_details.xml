@@ -34,7 +34,7 @@
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:src="@drawable/ic_clock"
+                app:srcCompat="@drawable/ic_clock"
                 app:layout_constraintStart_toStartOf="@id/course_details_container"
                 app:layout_constraintTop_toTopOf="@id/course_details_container"
                 app:tint="#A73376" />
@@ -79,7 +79,7 @@
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:src="@drawable/course_level"
+                app:srcCompat="@drawable/course_level"
                 app:layout_constraintStart_toStartOf="@id/course_details_container"
                 app:layout_constraintTop_toTopOf="@id/course_details_container"
                 app:tint="#A73376" />
@@ -124,7 +124,7 @@
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:src="@drawable/ic_course_fee"
+                app:srcCompat="@drawable/ic_course_fee"
                 app:layout_constraintStart_toStartOf="@id/course_details_container"
                 app:layout_constraintTop_toTopOf="@id/course_details_container"
                 app:tint="#A73376" />

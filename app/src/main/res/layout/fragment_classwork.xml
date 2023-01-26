@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
     <ImageView
@@ -175,7 +176,9 @@
                             android:textColor="#383838"
                             android:textSize="@dimen/_14ssp" />
 
-                        <include layout="@layout/item_resume_homework" />
+                        <include
+                            android:id="@+id/resumeHw"
+                            layout="@layout/item_resume_homework" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -260,7 +263,7 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/back_todays_classes"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/scorecard_back_design" />
+                                app:srcCompat="@drawable/scorecard_back_design" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -343,7 +346,7 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/back_teacher_note"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/scorecard_back_design" />
+                                app:srcCompat="@drawable/scorecard_back_design" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"

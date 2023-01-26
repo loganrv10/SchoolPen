@@ -30,7 +30,7 @@
         android:paddingBottom="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_marginStart="@dimen/_15sdp"
-        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"
         app:tint="#9163d7" />
 
     <LinearLayout

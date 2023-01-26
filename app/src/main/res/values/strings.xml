@@ -57,6 +57,52 @@
     <string name="attendance_button_text">Attendance</string>
     <string name="card_skills_des"><b><font color="#383838">Skills you\'ll gain:</font></b> Radian Measure, Triangle Solution, Amplitude, Solving Trigonometric Equation</string>
     <string name="enroll_now"><u>Enroll now</u></string>
+    <string name="duties_stats">Duties Stats</string>
+    <string name="_310hours">31 hours</string>
+
+    <!--ASSIGNMENT TEXT-->
+    <string name="home_work">Homework</string>
+    <string name="start_test">Start Test</string>
+    <string name="instruction">Instructions</string>
+    <string name="marked_for_review">Marked For\nreview</string>
+    <string name="good_to_submit">Good to\nsubmit</string>
+    <string name="submit">Submit</string>
+    <string name="questions">Questions</string>
+    <string name="success">Success!</string>
+    <string name="skipped_question">Skipped\nQuestion</string>
+    <string name="circle_on_qus_no">Circles on Question numbers</string>
+    <string name="success_msg">Hurray! Your Submissions has been sent to your teacher</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="attempted_questions">Attempted Questions</string>
+    <string name="skipped_questions">Skipped Questions</string>
+    <string name="total_questions">Total Questions</string>
+    <string name="return_to_home">Return To Homework</string>
+    <string name="marks">Marks:</string>
+    <string name="save_and_next">Save and Next</string>
+    <string name="hundred_word">100 max words</string>
+    <string name="one_word">One word</string>
+    <string name="type_answer_hint">Type your answer here</string>
+    <string name="or">OR</string>
+    <string name="browse_file_here">Browse your file here</string>
+    <string name="true_title">True</string>
+    <string name="false_title">False</string>
+    <string name="instruction_demo_text">User can swipe left &amp; right to change question.\n\nThe selected option will be saved only after Clicking ‘ Save and Next’\n\nQuestions with ‘Mark for review ‘ will not considered untill user click on ‘save and next’ before submitting.\n\nAnswer will automatically submit as soon as time ends.</string>
+    <string name="demo_question">Plaster of paris is prepared from?</string>
+    <string name="demo2_question">Plaster of paris is prepared from Gypsum?</string>
+    <string name="fill_in_blanks_multiple">Plaster of paris is prepared from________. How this chgemical substance is written________?</string>
+    <string name="fill_in_blanks">Plaster of paris is prepared from________.</string>
+    <string name="love_to_experiment_with_new_ideas_enjoy_the_process_of_discovery_i_am_very_enthuastic_to_learn_new_concepts_in_the_field_of_chemistry_i_want_to_become_a_bio_scientist_in_future_and_study_genealogy">Love to experiment with new ideas, enjoy the process of discovery. I am very enthuastic to learn new concepts in the field of chemistry. I want to become a Bio-scientist in future and study genealogy.</string>
+    <string name="connect_with_students_parents"><![CDATA[Connect with students & Parents]]></string>
+    <string name="live_class_meetings"><![CDATA[Live Class & Meetings]]></string>
+    <string name="if_you_received_an_invitation_link_tap_on_the_link_to_join_the_meeting">If you received an invitation link, tap on the link to join the meeting</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="teacher">Teachers</string>
+    <string name="classmates">Classmates</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="calendar">Calendar</string>
+    <string name="school_board">School Board</string>
+    <string name="exit">Exit</string>
     <string name="rupee">₹</string>
     <string name="tution_fees">Tution Fees........................ ₹4500</string>
     <string name="library_fees">Library Fees.................... ₹500</string>
@@ -117,4 +163,32 @@
     <string name="copy_code">Copy Code</string>
     <string name="your_speed_is_very_good_maintain_this_and_your_score_will_never_get_down">Stay focused to maintain your grade \nIncrease your accuracy to perform better, send more time in understanding the concepts \nYour speed is very good, maintain this and your score will never get down.</string>
     <string name="total_questions">Total Questions : </string>
+    <string name="view_answer_key"><u>View Answer Key</u></string>
+    <string name="title_activity_teacher_live_meeting">TeacherLiveMeetingActivity</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="the_fundamental">What are these structures?
+These structures look similar to each other.
+Together they form a big structure like an
+onion bulb! We find from this activity that
+onion bulbs of different sizes have similar
+small structures visible under a microscope.
+The cells of the onion peel will all look the
+same, regardless of the size of the onion they
+came from.
+These small structures that we see are
+the basic building units of the onion bulb.
+These structures are called cells. Not only Chlamydomonas, Paramoecium and bacteria.
+These organisms are called unicellular
+organisms (uni = single). On the other hand,
+many cells group together in a single body
+and assume different functions in it to form
+various body parts in multicellular organisms
+(multi = many) such as some fungi, plants
+and animals. Can we find out names of some
+more unicellular organisms?
+Every multi-cellular organism has come
+from a single cell. How? Cells divide to
+produce cells of their own kin</string>
 </resources>

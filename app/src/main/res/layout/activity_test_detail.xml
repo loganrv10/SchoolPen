@@ -32,7 +32,7 @@
                     android:paddingTop="@dimen/_5sdp"
                     android:paddingEnd="@dimen/_6sdp"
                     android:paddingBottom="@dimen/_5sdp"
-                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"
                     app:tint="#89F5FE" />
 
                 <ImageView
@@ -42,7 +42,7 @@
                     android:layout_marginBottom="-15dp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
-                    android:src="@drawable/boy_giving_exam" />
+                    app:srcCompat="@drawable/boy_giving_exam" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_clock"
+                        app:srcCompat="@drawable/ic_clock"
                         android:background="@android:color/transparent"
                         app:tint="#44C2E1" />
                     <TextView
@@ -182,7 +182,7 @@
                     <ImageButton
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/ic_star"
+                        app:srcCompat="@drawable/ic_star"
                         android:background="@drawable/circle_back"
                         android:backgroundTint="#44C2E1"
                         app:tint="#ffffff" />

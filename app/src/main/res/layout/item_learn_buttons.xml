@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/background"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:backgroundTint="#20AAAAAA"
-        android:src="@drawable/challanges_vector" />
+        app:srcCompat="@drawable/challanges_vector" />
 
     <TextView
         android:id="@+id/btnTitle"

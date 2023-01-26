@@ -60,7 +60,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/ic_pink_background_circle"
             android:layout_marginEnd="@dimen/_5sdp"
-            android:src="@drawable/ic_list_icon"
+            app:srcCompat="@drawable/ic_list_icon"
             />
     </LinearLayout>
     <com.asmanmirza.schoolpen.Helpers.CustomViewPager

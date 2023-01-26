@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        android:src="@drawable/ic_pink_clock"
+        app:srcCompat="@drawable/ic_pink_clock"
        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginStart="@dimen/_10sdp"
         />
@@ -87,7 +87,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/max_text"
         app:layout_constraintTop_toBottomOf="parent"
-        android:src="@drawable/ic_pink_star"
+        app:srcCompat="@drawable/ic_pink_star"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginStart="@dimen/_10sdp"
         />
