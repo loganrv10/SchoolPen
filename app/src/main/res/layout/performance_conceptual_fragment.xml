@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -127,7 +128,19 @@
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@id/flPerformane">
 
-                <ImageView
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/pieChart"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="@dimen/_150sdp"-->
+                <!--                    android:layout_marginStart="@dimen/_15sdp"-->
+                <!--                    android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+                <!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:scaleType="fitStart"-->
+                <!--                    android:src="@drawable/pie_chart" />-->
+
+                <com.github.mikephil.charting.charts.PieChart
                     android:id="@+id/pieChart"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_150sdp"
@@ -136,8 +149,7 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:layout_weight="1"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/pie_chart" />
+                    android:scaleType="fitStart" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -303,20 +315,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/llSubject" />
 
-            <!--            <androidx.appcompat.widget.AppCompatImageView-->
-            <!--                android:id="@+id/ivGraph"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="@dimen/_160sdp"-->
-            <!--                android:layout_marginHorizontal="@dimen/_15sdp"-->
-            <!--                android:layout_marginTop="@dimen/_10sdp"-->
-            <!--                android:layout_marginBottom="@dimen/_30sdp"-->
-            <!--                android:background="@drawable/back_15sdp"-->
-            <!--                android:backgroundTint="#20AAAAAA"-->
-            <!--                android:paddingTop="@dimen/_5sdp"-->
-            <!--                android:paddingBottom="@dimen/_5sdp"-->
-            <!--                android:src="@drawable/cummulative_chart"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/subject_graph_title" />-->
-
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/barChart"
                 android:layout_width="match_parent"
@@ -438,7 +436,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvCurrentGrade" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivSeek"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_150sdp"
@@ -592,27 +590,285 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvRecommedations" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvTimeAccuracyTop"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/testcheckAccuracyContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_14sdp"
-                android:background="@drawable/group_time_performance"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvSpan" />
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:cardBackgroundColor="#EBE4F5"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="@id/tvSpan"
+                app:layout_constraintTop_toBottomOf="@id/tvSpan">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="6 hr/day"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toTopOf="@id/tvTime"
+                        app:layout_constraintEnd_toStartOf="@id/tvDayPercentageValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Activity time"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvDay"
+                        app:layout_constraintStart_toStartOf="@id/tvDay"
+                        app:layout_constraintTop_toBottomOf="@id/tvDay" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDayPercentageValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="85%"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toTopOf="@id/tvPercentage"
+                        app:layout_constraintEnd_toStartOf="@id/tvSpeedValue"
+                        app:layout_constraintStart_toEndOf="@id/tvDay"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Accuracy"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvDayPercentageValue"
+                        app:layout_constraintStart_toStartOf="@id/tvDayPercentageValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvDayPercentageValue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSpeedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="1 m/que"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toTopOf="@id/tvSpeedText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvDayPercentageValue"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSpeedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Speed"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvSpeedValue"
+                        app:layout_constraintStart_toStartOf="@id/tvSpeedValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvSpeedValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvTimeAccuracySecond"
+                android:id="@+id/circlePercentageLeft"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/circle_back"
+                android:fontFamily="@font/lato_semi_bold"
+                android:gravity="center"
+                android:text="90%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@id/testcheckAccuracyContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/testcheckAccuracyContainer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/circlePercentageRight"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@drawable/circle_back"
+                android:backgroundTint="#C5ACE6"
+                android:fontFamily="@font/lato_semi_bold"
+                android:gravity="center"
+                android:text="9.2"
+                android:textColor="#707070"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@id/testcheckAccuracyContainer"
+                app:layout_constraintEnd_toEndOf="@id/testcheckAccuracyContainer"
+                app:layout_constraintTop_toTopOf="@id/testcheckAccuracyContainer" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/testcheckAccuracyContainer2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_14sdp"
-                android:background="@drawable/group_time_performance"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:cardBackgroundColor="#EBE4F5"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="@id/tvSpan"
+                app:layout_constraintTop_toBottomOf="@id/testcheckAccuracyContainer">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDay2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="6 hr/day"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toTopOf="@id/tvTime2"
+                        app:layout_constraintEnd_toStartOf="@id/tvDayPercentageValue2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Activity time"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvDay2"
+                        app:layout_constraintStart_toStartOf="@id/tvDay2"
+                        app:layout_constraintTop_toBottomOf="@id/tvDay2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDayPercentageValue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="85%"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toTopOf="@id/tvPercentage2"
+                        app:layout_constraintEnd_toStartOf="@id/tvSpeedValue2"
+                        app:layout_constraintStart_toEndOf="@id/tvDay2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPercentage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Accuracy"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvDayPercentageValue2"
+                        app:layout_constraintStart_toStartOf="@id/tvDayPercentageValue2"
+                        app:layout_constraintTop_toBottomOf="@id/tvDayPercentageValue2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSpeedValue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:fontFamily="@font/lato_semi_bold"
+                        android:text="1 m/que"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintBottom_toTopOf="@id/tvSpeedText2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvDayPercentageValue2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSpeedText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Speed"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvSpeedValue2"
+                        app:layout_constraintStart_toStartOf="@id/tvSpeedValue2"
+                        app:layout_constraintTop_toBottomOf="@id/tvSpeedValue2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/circlePercentageLeft2"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/circle_back"
+                android:fontFamily="@font/lato_semi_bold"
+                android:gravity="center"
+                android:text="90%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@id/testcheckAccuracyContainer2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvTimeAccuracyTop" />
+                app:layout_constraintTop_toTopOf="@id/testcheckAccuracyContainer2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/circlePercentageRight2"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@drawable/circle_back"
+                android:backgroundTint="#C5ACE6"
+                android:fontFamily="@font/lato_semi_bold"
+                android:gravity="center"
+                android:text="9.5"
+                android:textColor="#707070"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@id/testcheckAccuracyContainer2"
+                app:layout_constraintEnd_toEndOf="@id/testcheckAccuracyContainer2"
+                app:layout_constraintTop_toTopOf="@id/testcheckAccuracyContainer2" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvDescription"
@@ -627,7 +883,7 @@
                 android:text="@string/your_speed_is_very_good_maintain_this_and_your_score_will_never_get_down"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
-                app:layout_constraintTop_toBottomOf="@+id/tvTimeAccuracySecond" />
+                app:layout_constraintTop_toBottomOf="@+id/testcheckAccuracyContainer2" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvStateTitle"
@@ -757,20 +1013,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <!--                    <androidx.appcompat.widget.AppCompatImageView-->
-                    <!--                        android:id="@+id/ivGraphQuestion"-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:layout_marginHorizontal="@dimen/_35sdp"-->
-                    <!--                        android:layout_marginTop="@dimen/_20sdp"-->
-                    <!--                        android:scaleType="fitStart"-->
-                    <!--                        android:src="@drawable/graph_performance"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
-
                     <com.github.mikephil.charting.charts.LineChart
                         android:id="@+id/lineChart"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_120sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 

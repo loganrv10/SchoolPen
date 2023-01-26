@@ -33,7 +33,14 @@ class PerformanceConceptualFragmnet : Fragment() {
 
         showBarChart()
         lineChart()
+        showPieChart()
 
+    }
+
+    fun showPieChart() {
+        val data = PieData(generateData())
+        binding.pieChart.data = data
+        binding.pieChart.invalidate()
     }
 
     fun showBarChart() {
@@ -53,6 +60,7 @@ class PerformanceConceptualFragmnet : Fragment() {
 
         binding.barChart.axisRight.isEnabled = false
         binding.barChart.xAxis.isEnabled = false
+        binding.barChart.axisLeft.isEnabled = false
 
 
         binding.barChart.data = data
@@ -76,6 +84,8 @@ class PerformanceConceptualFragmnet : Fragment() {
 
         binding.lineChart.axisRight.isEnabled = false
         binding.lineChart.xAxis.isEnabled = false
+        binding.lineChart.axisLeft.isEnabled = false
+
         data.addDataSet(generateLineChartData())
         binding.lineChart.data = data
         binding.lineChart.invalidate()
@@ -115,15 +125,44 @@ class PerformanceConceptualFragmnet : Fragment() {
         val entries = ArrayList<BarEntry>()
         entries.add(BarEntry(0f, 20f))
         entries.add(BarEntry(1f, 24f))
-        entries.add(BarEntry(2f, 25f))
+        entries.add(BarEntry(2f, 70f))
         entries.add(BarEntry(3f, 28f))
-        entries.add(BarEntry(4f, 30f))
-        entries.add(BarEntry(5f, 35f))
+        entries.add(BarEntry(4f, 60f))
+        entries.add(BarEntry(5f, 10f))
         entries.add(BarEntry(6f, 40f))
         entries.add(BarEntry(7f, 42f))
         entries.add(BarEntry(8f, 45f))
         entries.add(BarEntry(9f, 50f))
-        entries.add(BarEntry(10f, 55f))
+        entries.add(BarEntry(10f, 20f))
         return entries
+    }
+
+    private fun generateData(): PieDataSet {
+        val dataSet = PieDataSet(generatePieEntries(), "Label")
+        dataSet.colors = generateColors()
+        dataSet.valueTextSize = 10f
+        return dataSet
+    }
+
+    private fun generatePieEntries(): ArrayList<PieEntry> {
+        val entries = ArrayList<PieEntry>()
+        entries.add(PieEntry(75f, ""))
+        entries.add(PieEntry(78f, ""))
+        entries.add(PieEntry(69f, ""))
+        entries.add(PieEntry(55f, ""))
+        entries.add(PieEntry(50f, ""))
+        entries.add(PieEntry(24f, ""))
+        return entries
+    }
+
+    private fun generateColors(): ArrayList<Int> {
+        val colors = ArrayList<Int>()
+        colors.add(Color.BLUE)
+        colors.add(Color.RED)
+        colors.add(Color.GREEN)
+        colors.add(Color.YELLOW)
+        colors.add(Color.MAGENTA)
+        colors.add(Color.DKGRAY)
+        return colors
     }
 }
