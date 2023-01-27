@@ -169,7 +169,7 @@
             android:backgroundTint="#F4EFFB"
             android:textColorHint="#707070"
             android:drawableStart="@drawable/ic_baseline_link_24"
-            android:drawableTint="@color/teachers_ui"
+            android:drawableTint="@color/color_primary"
             android:drawablePadding="@dimen/_10sdp"
             android:paddingTop="@dimen/_10sdp"
             android:paddingBottom="@dimen/_10sdp"
@@ -186,7 +186,7 @@
             app:srcCompat="@drawable/ic_baseline_mic_24"
             android:layout_marginStart="@dimen/_10sdp"
             android:background="@drawable/circle_back"
-            android:backgroundTint="@color/teachers_ui"
+            android:backgroundTint="@color/color_primary"
             android:padding="@dimen/_9sdp"
             app:tint="@color/white" />
 
