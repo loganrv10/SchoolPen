@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class ViewModelProfile @Inject constructor (private val repo: UserDetailsRepo) : ViewModel() {
+class ViewModelProfile @Inject constructor(private val repo: UserDetailsRepo) : ViewModel() {
     private val _userData: MutableLiveData<DataUser> = MutableLiveData()
     val userData: LiveData<DataUser> = _userData
 
@@ -32,6 +32,7 @@ class ViewModelProfile @Inject constructor (private val repo: UserDetailsRepo) :
                         val data = it.value.data
                         _userData.postValue(data)
                     }
+
                 }
             }
         }

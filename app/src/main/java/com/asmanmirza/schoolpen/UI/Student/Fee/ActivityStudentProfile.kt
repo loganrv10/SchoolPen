@@ -28,9 +28,6 @@ class ActivityStudentProfile : AppCompatActivity(), View.OnClickListener {
         setContentView(binding?.root)
         val db = TinyDB(this);
 
-        Log.e("reponseDataa", "opennn")
-
-
         (application as SchoolApp).applicationComponent.inject(this)
 
         userDetailViewModel =
@@ -39,10 +36,8 @@ class ActivityStudentProfile : AppCompatActivity(), View.OnClickListener {
         binding?.ivEditProfileStu?.setOnClickListener(this)
         binding?.backButton?.setOnClickListener(this)
         val token = db.getString("token")
-        Log.e("tokennn", token)
         userDetailViewModel.getUserDetails(
             5, "Bearer $token"
-//            " Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjc0ODMyNDMzLCJpYXQiOjE2NzQ3OTY0MzN9.9APBjK3jUxxF4qrB0NvacFeds0V9QdbEQ8Ct5_OgSec"
         )
 
         userDetailViewModel.userData.observe(this) {
