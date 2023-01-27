@@ -18,6 +18,7 @@ object NetworkConstants {
                 const val SIGNUP = "$API/signUp"
                 const val GENERATE_OTP = "$API/generateOtp"
                 const val VERIFY_OTP = "$API/verifyOtp"
+                const val GET_USER_DETAILS = "$API/user/{userId}"
             }
         }
     }

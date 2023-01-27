@@ -1,7 +1,10 @@
 package com.asmanmirza.schoolpen
 
 import android.app.Application
+import com.asmanmirza.schoolpen.UI.Student.di.ApplicationComponent
+import com.asmanmirza.schoolpen.UI.Student.di.DaggerApplicationComponent
 import dagger.hilt.android.HiltAndroidApp
+
 
 /**
  * @Author: Asman Mirza
@@ -11,4 +14,13 @@ import dagger.hilt.android.HiltAndroidApp
  */
 
 @HiltAndroidApp
-class SchoolApp : Application()
+class SchoolApp : Application(){
+
+    lateinit var applicationComponent: ApplicationComponent
+
+    override fun onCreate() {
+        super.onCreate()
+
+        applicationComponent = DaggerApplicationComponent.builder().build()
+    }
+}

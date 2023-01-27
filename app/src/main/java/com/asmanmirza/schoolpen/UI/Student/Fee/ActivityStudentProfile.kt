@@ -5,22 +5,50 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import com.asmanmirza.schoolpen.Helpers.TinyDB
 import com.asmanmirza.schoolpen.R
+import com.asmanmirza.schoolpen.SchoolApp
+import com.asmanmirza.schoolpen.UI.Student.Fee.viewModels.ViewModelProfile
+import com.asmanmirza.schoolpen.UI.Student.models.MainViewModelFactory
 import com.asmanmirza.schoolpen.databinding.ActvityProfileStudentBinding
-import com.asmanmirza.schoolpen.databinding.DialogStudentInviteBinding
+import javax.inject.Inject
 
 class ActivityStudentProfile : AppCompatActivity(), View.OnClickListener {
     private var _binding: ActvityProfileStudentBinding? = null
     private val binding get() = _binding
+    lateinit var userDetailViewModel: ViewModelProfile
 
+    @Inject
+    lateinit var mainViewModelFactory: MainViewModelFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActvityProfileStudentBinding.inflate(layoutInflater)
         setContentView(binding?.root)
+        val db = TinyDB(this);
+
+        Log.e("reponseDataa", "opennn")
+
+
+        (application as SchoolApp).applicationComponent.inject(this)
+
+        userDetailViewModel =
+            ViewModelProvider(this, mainViewModelFactory)[ViewModelProfile::class.java]
         binding?.btnDesc?.setOnClickListener(this)
         binding?.ivEditProfileStu?.setOnClickListener(this)
         binding?.backButton?.setOnClickListener(this)
+        val token = db.getString("token")
+        Log.e("tokennn", token)
+        userDetailViewModel.getUserDetails(
+            5, "Bearer $token"
+//            " Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjc0ODMyNDMzLCJpYXQiOjE2NzQ3OTY0MzN9.9APBjK3jUxxF4qrB0NvacFeds0V9QdbEQ8Ct5_OgSec"
+        )
+
+        userDetailViewModel.userData.observe(this) {
+            binding?.tvUserName?.text = it.userName
+            binding?.contentEmail?.text = it.email
+        }
     }
 
     override fun onDestroy() {
@@ -39,8 +67,7 @@ class ActivityStudentProfile : AppCompatActivity(), View.OnClickListener {
             R.id.ivEditProfileStu -> {
                 startActivity(
                     Intent(
-                        this@ActivityStudentProfile,
-                        ActivityEditProfileStudent::class.java
+                        this@ActivityStudentProfile, ActivityEditProfileStudent::class.java
                     )
                 )
             }

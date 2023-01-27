@@ -107,7 +107,7 @@ class HomeFragment : Fragment() {
             })
 
             ivAlert.setOnClickListener {
-                startActivity(Intent(requireContext(), ActivityFeePortal::class.java))
+                startActivity(Intent(requireContext(), ActivityStudentProfile::class.java))
             }
 
             ivMenu.setOnClickListener {
