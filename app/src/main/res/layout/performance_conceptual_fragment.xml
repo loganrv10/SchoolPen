@@ -20,7 +20,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Subjects"
+                android:text="@string/subjects"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,27 +46,27 @@
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All" />
+                    android:text="@string/all" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Maths" />
+                    android:text="@string/maths" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="English" />
+                    android:text="@string/english" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hindi" />
+                    android:text="@string/hindi" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Social Science" />
+                    android:text="@string/social_science" />
 
             </com.google.android.material.tabs.TabLayout>
 
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_semi_bold"
-                    android:text="Overall performance"
+                    android:text="@string/overall_performance"
                     android:textColor="#383838"
                     android:textSize="@dimen/_12ssp" />
 
@@ -128,18 +128,6 @@
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@id/flPerformane">
 
-                <!--                <ImageView-->
-                <!--                    android:id="@+id/pieChart"-->
-                <!--                    android:layout_width="0dp"-->
-                <!--                    android:layout_height="@dimen/_150sdp"-->
-                <!--                    android:layout_marginStart="@dimen/_15sdp"-->
-                <!--                    android:layout_marginTop="@dimen/_5sdp"-->
-                <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
-                <!--                    android:layout_marginBottom="@dimen/_5sdp"-->
-                <!--                    android:layout_weight="1"-->
-                <!--                    android:scaleType="fitStart"-->
-                <!--                    android:src="@drawable/pie_chart" />-->
-
                 <com.github.mikephil.charting.charts.PieChart
                     android:id="@+id/pieChart"
                     android:layout_width="0dp"
@@ -171,7 +159,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="English"
+                            android:text="@string/english"
                             android:textSize="@dimen/_10ssp" />
 
                         <View
@@ -194,7 +182,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Hindi"
+                            android:text="@string/hindi"
                             android:textSize="@dimen/_10ssp" />
 
                         <View
@@ -217,7 +205,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Science"
+                            android:text="@string/science"
                             android:textSize="@dimen/_10ssp" />
 
                         <View
@@ -240,7 +228,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Math"
+                            android:text="@string/math"
                             android:textSize="@dimen/_10ssp" />
 
                         <View
@@ -263,7 +251,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Social Science"
+                            android:text="@string/social_science"
                             android:textSize="@dimen/_10ssp" />
 
                         <View
@@ -287,7 +275,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Computer"
+                            android:text="@string/computer"
                             android:textSize="@dimen/_10ssp" />
 
                         <View
@@ -310,7 +298,7 @@
                 android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_11sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="All Subject Conceptual Learning graph"
+                android:text="@string/all_subject_conceptual_learning_graph"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/llSubject" />
@@ -342,7 +330,7 @@
                 android:fontFamily="@font/poppins_medium"
                 android:paddingHorizontal="@dimen/_15sdp"
                 android:paddingVertical="@dimen/_15sdp"
-                android:text="Hurray! You are achieving heights in maths computer"
+                android:text="@string/hurray_you_are_achieving_heights_in_maths_computer"
                 android:textColor="#707070"
                 android:textSize="@dimen/_9ssp"
                 app:layout_constraintBottom_toTopOf="@id/tvEnglish"
@@ -357,7 +345,7 @@
                 android:fontFamily="@font/poppins_medium"
                 android:paddingHorizontal="@dimen/_15sdp"
                 android:paddingVertical="@dimen/_15sdp"
-                android:text="You need to give more time for Hindi and English"
+                android:text="@string/you_need_to_give_more_time_for_hindi_and_english"
                 android:textColor="#707070"
                 android:textSize="@dimen/_9ssp"
                 app:layout_constraintBottom_toBottomOf="@id/ivLight"
@@ -371,7 +359,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Performence prediction"
+                android:text="@string/performence_prediction"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -384,7 +372,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Spen performance prediction to match  your goals"
+                android:text="@string/spen_performance_prediction_to_match_your_goals"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -397,7 +385,7 @@
                 android:layout_marginTop="@dimen/_12sdp"
                 android:background="@drawable/background_curve"
                 android:gravity="center"
-                android:text="Current performance 86%"
+                android:text="@string/current_performance_86"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -416,7 +404,7 @@
                 android:gravity="center"
                 android:paddingHorizontal="@dimen/_12sdp"
                 android:paddingVertical="@dimen/_12sdp"
-                android:text="Current grade  8.8"
+                android:text="@string/current_grade_8_8"
                 android:textColor="#707070"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="@id/tvHurray"
@@ -429,7 +417,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Schoolpen grade predictor"
+                android:text="@string/schoolpen_grade_predictor"
                 android:textColor="#707070"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -453,7 +441,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Performance"
+                android:text="@string/performance"
                 android:textColor="#707070"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="@id/ivSeek"
@@ -465,7 +453,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_14sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Activity Time"
+                android:text="@string/activity_time"
                 android:textColor="#707070"
                 android:textSize="@dimen/_10ssp"
                 app:layout_constraintStart_toStartOf="@id/tvPerformancee"
@@ -477,7 +465,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Accuracy"
+                android:text="@string/accuracy"
                 android:textColor="#707070"
                 android:textSize="@dimen/_10ssp"
                 app:layout_constraintStart_toStartOf="@id/tvActivityTime"
@@ -489,7 +477,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Speed"
+                android:text="@string/speed"
                 android:textColor="#707070"
                 android:textSize="@dimen/_10ssp"
                 app:layout_constraintStart_toStartOf="@id/tvAccuracy"
@@ -571,7 +559,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="AI Recommedations"
+                android:text="@string/ai_recommedations"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -584,7 +572,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Spen performance prediction to match  your goals"
+                android:text="@string/spen_performance_prediction_to_match_your_goals"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -613,7 +601,7 @@
                         android:layout_marginStart="@dimen/_50sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:fontFamily="@font/lato_semi_bold"
-                        android:text="6 hr/day"
+                        android:text="@string/_6_hr_day"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintBottom_toTopOf="@id/tvTime"
@@ -628,7 +616,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Activity time"
+                        android:text="@string/activity_time"
                         android:textColor="#707070"
                         android:textSize="@dimen/_8ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -651,13 +639,26 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="top"
+                        android:text="↑"
+                        android:textColor="#10E888"
+                        android:textSize="@dimen/_15ssp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDayPercentageValue"
+                        app:layout_constraintStart_toEndOf="@id/tvDayPercentageValue"
+                        app:layout_constraintTop_toTopOf="@id/tvDayPercentageValue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvPercentage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Accuracy"
+                        android:text="@string/accuracy"
                         android:textColor="#707070"
                         android:textSize="@dimen/_8ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -687,7 +688,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Speed"
+                        android:text="@string/speed"
                         android:textColor="#707070"
                         android:textSize="@dimen/_8ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -768,7 +769,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Activity time"
+                        android:text="@string/activity_time"
                         android:textColor="#707070"
                         android:textSize="@dimen/_8ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -782,7 +783,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:fontFamily="@font/lato_semi_bold"
-                        android:text="85%"
+                        android:text="90%"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintBottom_toTopOf="@id/tvPercentage2"
@@ -791,13 +792,26 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="top"
+                        android:text="↑"
+                        android:textColor="#10E888"
+                        android:textSize="@dimen/_15ssp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDayPercentageValue2"
+                        app:layout_constraintStart_toEndOf="@id/tvDayPercentageValue2"
+                        app:layout_constraintTop_toTopOf="@id/tvDayPercentageValue2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvPercentage2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Accuracy"
+                        android:text="@string/accuracy"
                         android:textColor="#707070"
                         android:textSize="@dimen/_8ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -827,7 +841,7 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Speed"
+                        android:text="@string/speed"
                         android:textColor="#707070"
                         android:textSize="@dimen/_8ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -892,7 +906,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Stats"
+                android:text="@string/stats"
                 android:textColor="#383838"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -919,7 +933,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Performace in types of question"
+                android:text="@string/performace_in_types_of_question"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -978,7 +992,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Performace in types of question"
+                android:text="@string/performace_in_types_of_question"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -991,7 +1005,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Check your performace in each questions types"
+                android:text="@string/check_your_performace_in_each_questions_types"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1041,7 +1055,7 @@
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Questions attempted : "
+                        android:text="@string/questions_attempted"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1054,7 +1068,7 @@
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Unattempted questions: "
+                        android:text="@string/unattempted_questions"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1068,7 +1082,7 @@
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Correct answers : "
+                        android:text="@string/correct_answers"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1082,7 +1096,7 @@
                         android:layout_marginTop="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_18sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Incorrect answers : "
+                        android:text="@string/incorrect_answers"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -1171,7 +1185,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Accuracy"
+                android:text="@string/accuracy"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1184,7 +1198,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Shows percentage of questions answered correctly"
+                android:text="@string/shows_percentage_of_questions_answered_correctly"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1234,7 +1248,7 @@
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Questions attempted : "
+                        android:text="@string/questions_attempted"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1303,7 +1317,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Time analysis"
+                android:text="@string/time_analysis"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1316,7 +1330,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Time taken to attempt each questions"
+                android:text="@string/time_taken_to_attempt_each_questions"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1355,7 +1369,7 @@
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_24sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Total Test time : "
+                        android:text="@string/total_test_time"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1368,7 +1382,7 @@
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Time taken : "
+                        android:text="@string/time_taken"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1382,7 +1396,7 @@
                         android:layout_marginTop="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_24sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Average time/ question : "
+                        android:text="@string/average_time_question"
                         android:textColor="#707070"
                         android:textSize="@dimen/_12ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -1437,7 +1451,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Time analysis"
+                android:text="@string/time_analysis"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1450,7 +1464,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Time taken to attempt each questions"
+                android:text="@string/time_taken_to_attempt_each_questions"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1487,7 +1501,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Total question attempted"
+                        android:text="@string/total_question_attempted"
                         android:textColor="#707070"
                         android:textSize="@dimen/_7ssp"
                         app:layout_constraintStart_toStartOf="@+id/tvTotalQuestionAttemptedSpeedValue"
@@ -1499,7 +1513,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/_20sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Time taken"
+                        android:text="@string/time_taken"
                         android:textColor="#707070"
                         android:textSize="@dimen/_7ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -1549,7 +1563,7 @@
                         android:layout_marginEnd="@dimen/_12sdp"
                         android:layout_marginBottom="@dimen/_20sdp"
                         android:fontFamily="@font/lato_regular"
-                        android:text="Average time/ question"
+                        android:text="@string/average_time_question"
                         android:textColor="#707070"
                         android:textSize="@dimen/_7ssp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -1567,7 +1581,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Performance in practise Test"
+                android:text="@string/performance_in_practise_test"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1580,7 +1594,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Shows overall test results"
+                android:text="@string/shows_overall_test_results"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1613,7 +1627,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/lato_semi_bold"
-                android:text="Suggestions"
+                android:text="@string/suggestions"
                 android:textColor="#383838"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1626,7 +1640,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Personalised suggestions based on your report"
+                android:text="@string/personalised_suggestions_based_on_your_report"
                 android:textColor="#383838"
                 android:textSize="@dimen/_8ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -1647,7 +1661,7 @@
                 android:layout_marginStart="@dimen/_24sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:layout_marginEnd="@dimen/_16sdp"
-                android:text="Your test performance needs more effort and hardwork"
+                android:text="@string/your_test_performance_needs_more_effort_and_hardwork"
                 android:textColor="#383838"
                 android:textSize="@dimen/_14sdp"
                 app:fontFamily="@font/lato_regular"
@@ -1672,7 +1686,7 @@
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginEnd="@dimen/_16sdp"
                 android:layout_marginBottom="@dimen/_30sdp"
-                android:text="Practise all type of questios to improve conceptual understanding and accuracy while answering. "
+                android:text="@string/practise_all_type_of_questios_to_improve_conceptual_understanding_and_accuracy_while_answering"
                 android:textColor="#383838"
                 android:textSize="@dimen/_14sdp"
                 app:fontFamily="@font/lato_regular"
