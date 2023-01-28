@@ -12,7 +12,6 @@ import retrofit2.http.*
  */
 interface MyApi {
 
-
     @GET(NetworkConstants.Api.EndPoints.Auth.GET_USER_DETAILS)
     suspend fun getUser(
         @Path("userId") userId: Int,

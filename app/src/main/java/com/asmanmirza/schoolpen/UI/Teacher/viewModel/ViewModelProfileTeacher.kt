@@ -1,4 +1,4 @@
-package com.asmanmirza.schoolpen.UI.Student.Fee.viewModels
+package com.asmanmirza.schoolpen.UI.Teacher.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -11,15 +11,14 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class ViewModelProfile @Inject constructor(private val repo: UserDetailsRepo) : ViewModel() {
+class ViewModelProfileTeacher @Inject constructor(private var repo: UserDetailsRepo) : ViewModel() {
     private val _userData: MutableLiveData<DataUser> = MutableLiveData()
     val userData: LiveData<DataUser> = _userData
 
     private val _errorString: MutableLiveData<String> = MutableLiveData()
     val errorString: LiveData<String> = _errorString
 
-
-    fun getUserDetails(userId: Int, token: String) {
+    fun getTeachersDetails(userId: Int, token: String) {
         viewModelScope.launch {
             repo.getUserDetails(userId, token).collectLatest {
                 when (it) {
@@ -31,9 +30,9 @@ class ViewModelProfile @Inject constructor(private val repo: UserDetailsRepo) : 
                         val data = it.value.data
                         _userData.postValue(data)
                     }
-
                 }
             }
         }
     }
+
 }
